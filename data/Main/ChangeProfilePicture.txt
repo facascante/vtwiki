@@ -1,0 +1,92 @@
+%META:TOPICINFO{author="TWikiContributor" date="1353267170" format="1.1" version="2"}%
+---+ %MAKETEXT{"Change Profile Picture of [_1]" args="%URLPARAM{ "wikiname" default=" " }%" }%
+
+<!--<pre>-->
+<style type='text/css' media='all'>
+ .profileBox {
+  border: solid #dddddd 1px;
+  -moz-box-shadow: 2px 2px 3px #e8e8e8;
+  -webkit-box-shadow: 2px 2px 3px #e8e8e8;
+  box-shadow: 2px 2px 3px #e8e8e8;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 5px 10px 10px 10px;
+  background-image: url(%PUBURLPATH%/%WEB%/UserProfileHeader/gradient-title.png);
+  background-repeat: repeat-x;
+  background-color: #ffffff;
+ }
+ .profileHeader {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: #333333;
+}
+ #viewInfo .twikiLastCol {
+  min-width:19em;
+ }
+</style>
+<script type="text/javascript">
+function validateFileType( fieldID, allowedTypes )
+{
+  var fileName=document.getElementById( fieldID ).value;
+  if( !fileName ) {
+    alert( 'Please specify a file of type '+allowedTypes+'.' );
+    return false;
+  } else {
+    var fileExt = (fileName.substring((fileName.lastIndexOf('.')+1)).toLowerCase());
+    var ext=allowedTypes.split( /, */ );
+    for ( var i in ext ) {
+      if( ext[i]==fileExt ) {
+        return true;
+      }
+    }
+    alert( 'Invalid file type. Please specify a file of type '+allowedTypes+'.' );        
+    return false;
+  }
+}
+</script>
+<!--</pre>-->
+<table border="0" cellspacing="0" cellpadding="0"><tr><td valign="top" class="profileBox" style="width: 200px;" rowspan="3">
+<div class="profileHeader">
+%MAKETEXT{"Current picture"}%:
+</div>
+%CALCULATE{$SET(current-image, %FORMFIELD{ "Image" topic="%URLPARAM{wikiname}%" }%)}%<nop>
+<img %IF{
+ "'%URLPARAM{wikiname}%'/attachments[name='%CALCULATE{$GET(current-image)}%']"
+ then='src="%PUBURLPATH%/%WEB%/%URLPARAM{wikiname}%/%CALCULATE{$GET(current-image)}%" title="%CALCULATE{$GET(current-image)}%"'
+ else='src="%PUBURLPATH%/%WEB%/UserProfileHeader/default-user-profile.jpg"'
+}% width="200" alt="" />
+</td><td valign="top">
+<img src="%PUBURLPATH%/%WEB%/UserProfileHeader/spacer.gif" width="20" height="1" />
+</td><td valign="top" class="profileBox">
+<div class="profileHeader">
+%MAKETEXT{"Upload new picture"}%:
+</div>
+<form name="main" enctype="multipart/form-data" onsubmit="return validateFileType( 'imageFile', 'jpg, png, gif' );" action="%SCRIPTURL{upload}%/%WEB%/%URLPARAM{wikiname}%" method="post" />
+<input type="file" name="filepath" id="imageFile" value="" size="36" %IF{ "defined 'wikiname'" else="disabled=''disabled'" }% />
+<input type="submit" class="twikiSubmit" value='%MAKETEXT{"Upload"}%' %IF{ "defined 'wikiname'" else="disabled=''disabled'" }% />
+<input type="hidden" name="filename" value="" />
+<input type="hidden" name="filecomment" value="" />
+<input type="hidden" name="createlink" value="" />
+<input type="hidden" name="hidefile" value="on" />
+<input type="hidden" name="updatefield" value="Image" />
+%IF{ "defined 'wikiname'" then="&nbsp; [[%URLPARAM{wikiname}%][%MAKETEXT{"Cancel"}%]]" }%
+<div style="margin-top: 5px; color: #444444">
+%T% %MAKETEXT{"Recommended step before upload: Crop the image to about square size, and resize it to a width of 200 pixels. This makes it load faster."}%
+</div>
+</form>
+</td></tr><tr><td></td><td>
+<img src="%PUBURLPATH%/%WEB%/UserProfileHeader/spacer.gif" width="1" height="20" />
+</td></tr><tr><td></td><td valign="top" class="profileBox">
+<div class="profileHeader">
+%MAKETEXT{"Select existing picture"}%:
+</div>
+%CALCULATE{$LISTJOIN(&nbsp; , $LISTMAP(<form action="%SCRIPTURL{save}%/%WEB%/%URLPARAM{wikiname}%" method="post" /> <input type="hidden" name="Image" value="$item" /> <input type="image" src="%PUBURLPATH%/%WEB%/%URLPARAM{wikiname}%/$item" height="60" border="0" alt="" title="$item" class="twikiButton" style="padding:10px" /></form>, $LISTIF($NOT($EXACT($item,undef)), %SEARCH{ "%URLPARAM{wikiname}%" scope="topic" topic="%URLPARAM{wikiname}%" nonoise="1" limit="1" format="$query(attachments[name~'*.jpg'].name), $query(attachments[name~'*.JPG'].name), $query(attachments[name~'*.png'].name), $query(attachments[name~'*.PNG'].name), $query(attachments[name~'*.gif'].name), $query(attachments[name~'*.GIF'].name)" }%)))}%
+</td></tr></table>
+
+%IF{ "defined 'wikiname'" then="__%MAKETEXT{"Return to"}%:__ [[%URLPARAM{wikiname}%]]" }%
+
+<!--
+   * Set ALLOWTOPICCHANGE = %USERSWEB%.TWikiAdminGroup
+   * Set READONLYSKINMODE = 1
+-->

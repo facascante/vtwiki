@@ -1,0 +1,3 @@
+| Tue Sep 17 05:17:43 2013 |  | {PermittedRedirectHostUrls} | $TWiki::cfg{PermittedRedirectHostUrls} = '192.168.100.1';
+| Tue Sep 17 05:17:43 2013 |  | {Site}{CharSet} | $TWiki::cfg{Site}{CharSet} = 'iso-8859-1';
+| Tue Sep 17 05:43:46 2013 |  | {StoreImpl} | $TWiki::cfg{StoreImpl} = 'RcsLite';

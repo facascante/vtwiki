@@ -1,0 +1,9 @@
+%META:TOPICINFO{author="BaseUserMapping_333" date="1379501761" format="1.1" version="1.2"}%
+%META:TOPICPARENT{name="OpenIdRpContrib"}%
+---+ !OpenID Admin Console
+
+logged in via !OpenID: %IF{ "context logged_in_openid" then="yes" else="no" }% 
+
+%OPENIDCONSOLE{admin="1"}%
+
+__Related Topics:__ OpenIdRpContrib, OpenIdRpContribFAQ, OpenIDUserConsole

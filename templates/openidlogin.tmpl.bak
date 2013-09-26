@@ -1,0 +1,302 @@
+%{ This is the login template included with OpenIdRpContrib }%
+%TMPL:INCLUDE{"login"}%
+
+%TMPL:DEF{"title"}%---++ %MAKETEXT{"Select your !OpenID Provider to log in"}%
+%TMPL:END%
+
+%TMPL:DEF{"openidstep"}%<div class="twikiFormStep">
+%OPENIDPROVIDERS%
+<div class="openid_login_note">
+%MAKETEXT{"For other !OpenID providers:"}%
+<br/>
+%MAKETEXT{"enter your !OpenID identity URL as your username and omit the password."}%
+</div>
+</div><!-- /twikiFormStep-->%TMPL:END%
+
+%TMPL:DEF{"orlogintitle"}%---++ %MAKETEXT{"Or enter your username and password"}%
+%TMPL:END%
+
+%TMPL:DEF{"orloginstep"}%<div class="twikiFormStep">
+%TMPL:P{"orlogintitle"}%
+</div><!-- /twikiFormStep-->%TMPL:END%
+
+%TMPL:DEF{"openidcss"}%
+<style type="text/css" media="all">
+#twikiLogin { width: 89em; margin: 0 auto; }
+.openidLoginBox { width: auto; display: block; }
+.openidLeftSide .twikiFormStep { border-width: 1px 0 0 0; }
+.openidRightSide .twikiFormStep { border-width: 1px 0 0 1px; }
+.openidLoginSide { width: 44em; display: inline-block; vertical-align: top; }
+.OP_list { display: block; text-align: center; left-margin: auto; right-margin: auto; }
+.OP_entry { font-size: .8em; margin: 4px; display: inline-block; vertical-align: middle; }
+.OP_icon { padding: 3px; border: 0; vertical-align: middle; }
+.openid_login_note { font-size: .83em; font-style: italic; margin-left: auto;  margin-right: auto; text-align: center; }
+</style>
+%TMPL:END%
+
+%TMPL:DEF{"usernamefield"}%<input class="twikiInputField" type="text" size="60" name="username" value="" /><input type="hidden" name="origurl" value="%ORIGURL%" />%TMPL:END%
+
+%TMPL:DEF{"usernamestep"}%<div class="twikiFormStep">
+---+++ %MAKETEXT{"Username"}%
+
+%TMPL:P{"usernamefield"}% %TMPL:P{"usernamefieldhelp"}%
+
+</div><!-- /twikiFormStep-->%TMPL:END%
+
+%TMPL:DEF{"sidebarlogincss"}%
+<style type="text/css" media="all">
+.sidebar_OP_list { padding: 0px; border: 0; display: inline-block; }
+.sidebar_OP_entry { padding: 0px; border: 0; display: inline-block; }
+.sidebar_OP_icon { padding: 0px; border: 0; }
+</style>
+%TMPL:END%
+
+%TMPL:DEF{"sidebarlogin"}%
+%MAKETEXT{"Login via [[%SYSTEMWEB%.OpenIdRpContrib][OpenID]]"}%: <form action="%LOGINURL%"  name="loginform" method="post">
+%OPENIDPROVIDERS{ sidebar="1" }%
+%BR%
+or
+%BR%
+%MAKETEXT{"Username"}%:
+%TMPL:P{"usernamefield"}%
+%MAKETEXT{"Password"}%:
+%TMPL:P{"passwordfield"}%
+%BR%
+%TMPL:P{"submit"}%
+</form>
+%TMPL:END%
+
+%TMPL:DEF{"form"}%<div id="twikiLogin">
+<div class="twikiFormSteps openidLoginBox"><div class="openidLoginSide openidLeftSide">
+%TMPL:P{"formstart"}%%TMPL:P{"titlestep"}%%TMPL:P{"openidstep"}%
+</div><!-- /openidLoginSide--><div class="openidLoginSide openidRightSide">
+%TMPL:P{"orloginstep"}%%TMPL:P{"usernamestep"}%%TMPL:P{"passwordstep"}%%TMPL:P{"submitstep"}%
+%TMPL:P{"formend"}%
+%TMPL:P{"seealsostep"}%
+</div><!-- /openidLoginSide-->
+</div><!-- /twikiFormSteps-->
+</div><!-- /twikiLogin-->%TMPL:END%
+
+<!-- the following templates contain variables which must be substituted by the code that reads them - they are not valid TWiki variables -->
+
+<!-- OpenID user & admin console CSS -->
+%TMPL:DEF{"openidconsolecss"}%
+<style type="text/css" media="all">
+.twiki_openid_acon { background-color: #efffbf; }
+.twiki_openid_acon_heading   { margin: 5px; padding-left: 130px; background-image:url("/twiki/pub/TWiki/OpenIdRpContrib/logo_openid_trans.png"); background-repeat: no-repeat; background-position: left center; font-weight: bold; font-size: 140%; line-height: 40px; }
+.twiki_openid_acon_panel { }
+.twiki_openid_acon_panel_heading { padding: 3px; font-weight: bold; font-size: 1.17em; background-color: #efefef; }
+.twiki_openid_acon_panel_heading_note { display: block; font-size: .83em; font-style: italic; };
+.twiki_openid_acon_uform { padding: 5px; }
+.twiki_openid_acon_ulink { display: inline; }
+.twiki_openid_acon_ulink a { font-weight: bold; display: inline; }
+.twiki_openid_acon_id   { padding: 3px; font-weight: bold; font-size: 1.17em; background-color: #efefef; }
+.twiki_openid_acon_id img { padding-right: 5px; }
+.twiki_openid_acon_row { display: inline-table; }
+.twiki_openid_acon_form { padding: 5px; vertical-align: top; display: table-cell; }
+.twiki_openid_acon_form_heading { text-decoration: underline; }
+.twiki_openid_acon_form_body { }
+.twiki_openid_acon_form_button { display: block; margin-top: 5px; margin-bottom 5px; }
+.twiki_openid_acon_form_button img { padding-right: 5px; }
+.twiki_openid_acon_attrs { padding: 5px; border-left: 1px solid #efefef; vertical-align: top; display: table-cell; }
+.twiki_openid_acon_attrs_heading { text-decoration: underline; }
+.twiki_openid_acon_attr { }
+.twiki_openid_acon_attr_even { }
+.twiki_openid_acon_attr_odd { background-color: #e7f7b7; }
+.twiki_openid_ucon { background-color: #ffefbf; }
+.twiki_openid_ucon_heading   { margin: 5px; padding-left: 130px; background-image:url("/twiki/pub/TWiki/OpenIdRpContrib/logo_openid_trans.png"); background-repeat: no-repeat; background-position: left center; font-weight: bold; font-size: 140%; line-height: 40px; }
+.twiki_openid_ucon_heading_message { display: block; }
+.twiki_openid_ucon_id   { padding: 3px; font-weight: bold; font-size: 1.17em; background-color: #efefef; }
+.twiki_openid_ucon_id img { padding-right: 5px; }
+.twiki_openid_ucon_row { display: inline-table; }
+.twiki_openid_ucon_form { padding: 5px; vertical-align: top; display: table-cell; }
+.twiki_openid_ucon_form_heading { text-decoration: underline; }
+.twiki_openid_ucon_form_body { }
+.twiki_openid_ucon_form_button { display: block; margin-top: 5px; margin-bottom 5px; }
+.twiki_openid_ucon_form_button img { padding-right: 5px; }
+.twiki_openid_ucon_attrs { padding: 5px; border-left: 1px solid #efefef; vertical-align: top; display: table-cell; }
+.twiki_openid_ucon_attrs_heading { text-decoration: underline; }
+.twiki_openid_ucon_attr { }
+.twiki_openid_ucon_attr_even { }
+.twiki_openid_ucon_attr_odd { background-color: #f7e7b7; }
+.twiki_openid_ucon_add_id { }
+.twiki_openid_ucon_add_id_list_intro { text-align: center; }
+.twiki_openid_ucon_add_id_url { text-align: center; border-top: 1px solid #efefef; padding: 3px; }
+.twiki_openid_acon_upanel_heading_form { float: right;
+</style>
+%TMPL:END%
+
+<!-- openid_acon - Admin console -->
+%TMPL:DEF{"openid_acon"}%<div class="twiki_openid_acon">
+<div class="twiki_openid_acon_heading">
+TWiki !OpenID administrator console for admin user [[%USERSWEB%.%OPENID_USER%][%OPENID_USER%]]
+</div>
+<div class="twiki_openid_acon_heading_message">%message%</div>
+<div class="twiki_openid_acon_panel">
+%OPENID_ADMIN_PANEL_HEADING%
+%OPENID_ADMIN_USER_MENU%
+</div></div>%TMPL:END%
+
+<!-- openid_acon_add - Form to add OpenID identities -->
+%TMPL:DEF{"openid_acon_add"}%
+<div class="twiki_openid_acon_add_id">
+<div class="twiki_openid_acon_id">
+<img src="%PUBURL%/TWiki/OpenIdRpContrib/Crystal_Clear_action_edit_add_16.png" width="16" height="16" border="0" alt="">Pre-approve an !OpenID identity for this account
+</div>
+<form action="%TOPICURL%"  method="post">
+<input type="hidden" name="action" value="preapprove">
+<div class="twiki_openid_acon_add_id_url">
+Enter the !OpenID identity URL
+<input type="text" name="openid.identity" value="" size="60">
+<input type="hidden" name="user" value="%user%">
+<button name="preapprove" value="1">Pre-approve</button>
+</div>
+</form>
+</div>%TMPL:END%
+
+<!-- openid_acon_panel_heading -->
+%TMPL:DEF{"openid_acon_panel_heading"}%<div class="twiki_openid_acon_panel_heading">
+%USER_COUNT_TOTAL% user records: %USER_COUNT_OPENID% !OpenID, %USER_COUNT_NONOPENID% other
+<div class="twiki_openid_acon_panel_heading_note">
+</div></div>%TMPL:END%
+
+<!-- openid_acon_upanel_heading -->
+%TMPL:DEF{"openid_acon_upanel_heading"}%<div class="twiki_openid_acon_panel_heading">
+Edit user [[%USERSWEB%.%user%][%user%]]
+<div class="twiki_openid_acon_upanel_heading_form">
+<form action="%TOPICURL%"  method="post">
+<input type="hidden" name="user" value="%user%">
+<button type="submit" class="twiki_openid_acon_heading_form_button" name="deleteuser" title="Delete this TWiki user's !OpenID records" value="%user%"><img src="%PUBURL%/TWiki/OpenIdRpContrib/Crystal_Clear_action_edit_delete_16.png" width="16" height="16" border="0" alt="">Delete <nop>OpenID data for <nop>%user%</button>
+</form>
+</div></div>
+<div class="twiki_openid_acon_upanel_heading_info">
+Canonical UID: <nop>%cuid%
+</div>%TMPL:END%
+
+<!-- openid_acon_create_user_panel - admin form, user creation panel -->
+%TMPL:DEF{"openid_acon_create_user_panel"}%<div class="twiki_openid_acon_id">
+Create a new user
+</div>
+<div class="twiki_openid_acon_uform">
+<form action="%TOPICURL%"  method="get">
+First name:
+<input type="text" name="first_name" value="" size="30">
+Last name:
+<input type="text" name="last_name" value="" size="30">
+%BR%
+Pre-approved !OpenID identity URL:
+<input type="text" name="openid.identity" value="" size="60">
+%BR%
+<button name="createuser" value="1">Create user</button>
+</form>
+</div>%TMPL:END%
+
+<!-- openid_acon_uform - Admin console, user menu form Level 1 -->
+%TMPL:DEF{"openid_acon_uform"}%<div class="twiki_openid_acon_uform">
+%OPENID_FILTER_NOTE%<form action="%TOPICURL%"  method="get">
+<select name="user">
+%OPENID_ACON_F1_OPTS%
+</select>
+<button name="edituser" value="1">Edit user</button>
+</form>
+</div>%openid_acon_create_user_panel%%TMPL:END%
+
+<!-- openid_acon_ulinks - Admin console, user menu links Level 2+ -->
+%TMPL:DEF{"openid_acon_ulinks"}%<div class="twiki_openid_acon_uform">
+Select from accounts starting with: %OPENID_ACON_ULINKS%
+</div>%openid_acon_create_user_panel%%TMPL:END%
+
+<!-- openid_acon_ulink - Admin console, user menu link Level 2+ -->
+%TMPL:DEF{"openid_acon_ulink"}%<div class="twiki_openid_acon_ulink"><a href="%TOPICURL%?filter=%prefix%">%prefix%</a> (%count%)</div>%TMPL:END%
+
+<!-- openid_acon_rec - User OpenID list entry -->
+%TMPL:DEF{"openid_acon_rec"}%<div class="twiki_openid_acon_rec">
+<div class="twiki_openid_acon_id"><img src="%PUBURL%/TWiki/OpenIdRpContrib/Crystal_Clear_action_identity_16.png" width="16" height="16" border="0" alt=""><nop>OpenID identity #%OPENID_USER_ID_COUNT%: <nop>%OPENID_USER_ID%</div>
+<div class="twiki_openid_acon_row">
+<div class="twiki_openid_acon_form">
+<div class="twiki_openid_acon_form_heading">Actions</div>
+<div class="twiki_openid_acon_form_body">
+<form action="%TOPICURL%"  method="post">
+<input type="hidden" name="user" value="%user%">
+<button type="submit" class="twiki_openid_acon_form_button" name="deleteid" title="Delete this identity from your TWiki account" value="%OPENID_USER_ID_COUNT%"><img src="%PUBURL%/TWiki/OpenIdRpContrib/Crystal_Clear_action_edit_delete_16.png" width="16" height="16" border="0" alt="">Delete ID</button>
+</form>
+</div></div><div class="twiki_openid_acon_attrs">
+<div class="twiki_openid_acon_attrs_heading">Primary TWiki data</div>
+%OPENID_USER_DATA%
+</div><div class="twiki_openid_acon_attrs">
+<div class="twiki_openid_acon_attrs_heading">Attributes received from this !OpenID Provider</div>
+%OPENID_USER_ID_ATTRS%</div></div></div>%TMPL:END%
+
+<!--openid_acon_recs - User OpenID list wrapper -->
+%TMPL:DEF{"openid_acon_recs"}%<div class="twiki_openid_acon_rec">
+%OPENID_USER_RECS%</div>%TMPL:END%
+
+<!-- openid_acon_attr - User OpenID attribute entry -->
+%TMPL:DEF{"openid_acon_attr"}%<div class="twiki_openid_acon_attr twiki_openid_acon_attr_%OPENID_ATTR_ODDEVEN%"><nop>%OPENID_ATTR_KEY%: <nop>%OPENID_ATTR_VAL%</div>%TMPL:END%
+
+<!-- openid_acon_recs_empty - string to explain no OpenID entries -->
+%TMPL:DEF{"openid_acon_recs_empty"}%<div class="twiki_openid_acon_rec">
+<div class="twiki_openid_acon_id"><img src="%PUBURL%/TWiki/OpenIdRpContrib/Crystal_Clear_action_identity_16.png" width="16" height="16" border="0" alt="">No <nop>OpenID identities are attached to this account</div>
+There is no <nop>OpenID identity for this user until an admin pre-approves it or the user logs in by a non-<nop>OpenID method and adds it</div>%TMPL:END%
+
+<!-- openid_ucon - User console -->
+%TMPL:DEF{"openid_ucon"}%<div class="twiki_openid_ucon">
+<div class="twiki_openid_ucon_heading">
+TWiki !OpenID user console for [[%USERSWEB%.%OPENID_USER%][%OPENID_USER%]]
+</div>
+<div class="twiki_openid_ucon_heading_message">%message%</div>
+%OPENID_USER_INFO%%OPENID_USER_ID_ADD%
+</div>%TMPL:END%
+
+<!-- openid_ucon_add - Form to add OpenID identities -->
+%TMPL:DEF{"openid_ucon_add"}%
+<div class="twiki_openid_ucon_add_id">
+<div class="twiki_openid_ucon_id">
+<img src="%PUBURL%/TWiki/OpenIdRpContrib/Crystal_Clear_action_edit_add_16.png" width="16" height="16" border="0" alt="">Add an !OpenID identity to your account
+</div>
+<form action="%TOPICURL%"  method="post">
+<input type="hidden" name="action" value="user">
+<div class="twiki_openid_ucon_add_id_list">
+<div class="twiki_openid_ucon_add_id_list_intro">
+Select an !OpenID Provider where you have an account
+</div>
+%OPENIDPROVIDERS{action="connect"}%
+</div>
+<div class="twiki_openid_ucon_add_id_url">
+or enter your !OpenID identity URL
+<input type="text" name="openid.claimed_id" value="" size="60">
+<button name="claim" value="1">Claim ID</button>
+</div>
+</form>
+</div>
+%TMPL:END%
+
+<!--openid_ucon_recs - User OpenID list wrapper -->
+%TMPL:DEF{"openid_ucon_recs"}%<div class="twiki_openid_ucon_rec">
+%OPENID_USER_RECS%</div>%TMPL:END%
+
+<!-- openid_ucon_rec - User OpenID list entry -->
+%TMPL:DEF{"openid_ucon_rec"}%<div class="twiki_openid_ucon_rec">
+<div class="twiki_openid_ucon_id"><img src="%PUBURL%/TWiki/OpenIdRpContrib/Crystal_Clear_action_identity_16.png" width="16" height="16" border="0" alt=""><nop>OpenID identity #%OPENID_USER_ID_COUNT%: <nop>%OPENID_USER_ID%</div>
+<div class="twiki_openid_ucon_row">
+<div class="twiki_openid_ucon_form">
+<div class="twiki_openid_ucon_form_heading">Actions</div>
+<div class="twiki_openid_ucon_form_body">
+<form action="%TOPICURL%"  method="post">
+<input type="hidden" name="user" value="%user%">
+<button type="submit" class="twiki_openid_ucon_form_button" name="update" title="Update/refresh this identity's info from your provider" value="%OPENID_USER_ID_COUNT%"><img src="%PUBURL%/TWiki/OpenIdRpContrib/Crystal_Clear_action_quick_restart_16.png" width="16" height="16" border="0" alt="">Update ID</button>
+<button type="submit" class="twiki_openid_ucon_form_button" name="delete" title="Delete this identity from your TWiki account" value="%OPENID_USER_ID_COUNT%"><img src="%PUBURL%/TWiki/OpenIdRpContrib/Crystal_Clear_action_edit_delete_16.png" width="16" height="16" border="0" alt="">Delete ID</button>
+</form>
+</div></div><div class="twiki_openid_ucon_attrs">
+<div class="twiki_openid_ucon_attrs_heading">Primary TWiki data</div>
+%OPENID_USER_DATA%
+</div><div class="twiki_openid_ucon_attrs">
+<div class="twiki_openid_ucon_attrs_heading">Attributes received from this !OpenID Provider</div>
+%OPENID_USER_ID_ATTRS%</div></div></div>%TMPL:END%
+
+<!-- openid_ucon_attr - User OpenID attribute entry -->
+%TMPL:DEF{"openid_ucon_attr"}%<div class="twiki_openid_ucon_attr twiki_openid_ucon_attr_%OPENID_ATTR_ODDEVEN%"><nop>%OPENID_ATTR_KEY%: <nop>%OPENID_ATTR_VAL%</div>%TMPL:END%
+
+<!-- openid_ucon_recs_empty - string to explain no OpenID entries -->
+%TMPL:DEF{"openid_ucon_recs_empty"}%<div class="twiki_openid_ucon_err">no <nop>OpenID identities are attached to this account</div>
+%TMPL:END%

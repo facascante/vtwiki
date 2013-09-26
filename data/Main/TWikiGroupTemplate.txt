@@ -1,0 +1,20 @@
+%META:TOPICINFO{author="TWikiContributor" date="1347518214" format="1.1" version="7"}%
+%META:TOPICPARENT{name="TWikiGroups"}%
+---+!! [[TWikiGroups]] &#187; <nop>%URLPARAM{"topic"}%
+
+Use this group for [[%SYSTEMWEB%.TWikiAccessControl][access control]] of webs and topics.
+
+%EDITPREFERENCES{ "%SYSTEMWEB%.TWikiPreferencesForm" editbutton="Edit Group Settings" }%
+
+   * Member list:
+      * Set GROUP = %WIKINAME%
+
+   * Persons/group who can change the list: 
+      * Set ALLOWTOPICCHANGE = %URLPARAM{"topic"}%
+
+%T% Both settings accept a comma-space delimited list of users and groups in %SYSTEMWEB%.WikiWord format. Groups can be nested.
+
+<!--
+   * Set READONLYSKINMODE = 1
+-->
+__%MAKETEXT{"Related topics:"}%__ [[TWikiGroups]], [[%SYSTEMWEB%.TWikiAccessControl][TWikiAccessControl]], [[UserList]], [[%WIKIUSERSTOPIC%]]

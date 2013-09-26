@@ -1,0 +1,42 @@
+---+ Package ==
+
+%TOC%
+=head1 NAME
+
+CGI::Session::Driver::sqlite - CGI::Session driver for SQLite
+
+=head1 SYNOPSIS
+
+    $s = CGI::Session->new("driver:sqlite", $sid, {DataSource=>'/my/folder/sessions.sqlt'});
+    $s = CGI::Session->new("driver:sqlite", $sid, {Handle=>$dbh});
+
+or
+
+    $s = CGI::Session->new('driver:sqlite', undef,
+    {
+        TableName=>'session',
+        IdColName=>'my_id',
+        DataColName=>'my_data',
+        Handle=>$dbh,
+    });
+
+=head1 DESCRIPTION
+
+B<sqlite> driver stores session data in SQLite files using L<DBD::SQLite|DBD::SQLite> DBI driver. More details see L<CGI::Session::Driver::DBI|CGI::Session::Driver::DBI>, its parent class.
+
+=head1 DRIVER ARGUMENTS
+
+Supported driver arguments are I<DataSource> and I<Handle>. B<At most> only one of these arguments can be set while creating session object.
+
+I<DataSource> should be in the form of C<dbi:SQLite:dbname=/path/to/db.sqlt>. If C<dbi:SQLite:> is missing it will be prepended for you. If I<Handle> is present it should be database handle (C<$dbh>) returned by L<DBI::connect()|DBI/connect()>.
+
+As of version 1.7 of this driver, the third argument is B<NOT> optional. Using a default database in the temporary directory is a security risk since anyone on the machine can create and/or read your session data. If you understand these risks and still want the old behavior, you can set the C<DataSource> option to I<'/tmp/sessions.sqlt'>.
+
+=head1 BUGS AND LIMITATIONS
+
+None known.
+
+=head1 LICENSING
+
+For support and licensing see L<CGI::Session|CGI::Session>
+

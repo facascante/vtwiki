@@ -1,0 +1,7 @@
+%META:TOPICINFO{author="BaseUserMapping_333" date="1380002213" format="1.1" reprev="1.2" version="1.2"}%
+%META:TOPICPARENT{name="WebHome"}%
+---+ %MAKETEXT{"Placeholder for trashed attachments"}%
+
+
+%META:FILEATTACHMENT{name="bg_small.png" attachment="bg_small.png" attr="" comment="header background small" date="1380002030" moveby="BaseUserMapping_333" movedto="Trash.TrashAttachment.bg_small.png" movedwhen="1380002194" movefrom="Main.TWikiPreferences.bg_small.png" path="bg_small.png" size="97094" user="BaseUserMapping_333" version="2"}%
+%META:FILEATTACHMENT{name="bg.png" attachment="bg.png" attr="" comment="header background" date="1380000858" moveby="BaseUserMapping_333" movedto="Trash.TrashAttachment.bg.png" movedwhen="1380002213" movefrom="Main.TWikiPreferences.bg.png" path="bg.png" size="102005" user="BaseUserMapping_333" version="2"}%

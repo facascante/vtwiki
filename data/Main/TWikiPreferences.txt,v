@@ -1,0 +1,265 @@
+head	1.9;
+access	;
+symbols;
+locks; strict;
+comment	@# @;
+
+1.9
+date	2013.09.24.06.19.51;	author BaseUserMapping_333;	state Exp;
+branches;	
+next	1.8;
+1.8
+date	2013.09.24.00.42.05;	author BaseUserMapping_333;	state Exp;
+branches;	
+next	1.7;
+1.7
+date	2013.09.17.06.49.16;	author BaseUserMapping_333;	state Exp;
+branches;	
+next	1.6;
+1.6
+date	2010.05.29.14.45.04;	author TWikiContributor;	state Exp;
+branches;	
+next	1.5;
+1.5
+date	2008.01.22.03.21.37;	author TWikiContributor;	state Exp;
+branches;	
+next	1.4;
+1.4
+date	2007.01.16.04.12.07;	author TWikiContributor;	state Exp;
+branches;	
+next	1.3;
+1.3
+date	2006.04.01.05.54.53;	author TWikiContributor;	state Exp;
+branches;	
+next	1.2;
+1.2
+date	2006.02.01.12.01.14;	author TWikiContributor;	state Exp;
+branches;	
+next	1.1;
+1.1
+date	2003.12.20.21.29.00;	author PeterThoeny;	state Exp;
+branches;	
+next	;
+
+
+desc
+@none
+@
+
+
+1.9
+log
+@@
+text
+@%META:TOPICINFO{author="BaseUserMapping_333" date="1380003591" format="1.1" reprev="1.9" version="1.9"}%
+---+!! %MAKETEXT{"Local customisations of site-wide preferences"}%
+
+<div class="twikiHelp">%ICON{"info"}% %MAKETEXT{"Site-level preferences are located in [_1], however this [_2] prefs topic has override priority and should be used for local customisations. This allows for easier upgrades as you don't need to worry about the shipped preferences clobbering yours. It's easier to keep a handle on if you only copy over the settings you actually change." args="[[%SYSTEMWEB%.%TOPIC%]], [[%USERSWEB%.%TOPIC%]]"}% </div>
+
+%EDITPREFERENCES{"%SYSTEMWEB%/TWikiPreferencesForm"}%
+%IF{"$ SCRIPTNAME != 'viewauth%SCRIPTSUFFIX%'" then="<span class='twikiGrayText'>%MAKETEXT{"Quick edit of existing preferences (edit the topic text to set new preferences)"}%</span>" }%
+
+---++ Site Specific Site-wide Preferences
+<!-- Add site-wide preferences here -->
+<!-- CUSTOM START -->
+   * Set SKIN = tagme, pattern
+   * %SYSTEMWEB%.PatternSkin settings:
+      * Set TWIKILAYOUTURL = %PUBURLPATH%/%SYSTEMWEB%/PatternSkin/layout.css
+      * Set TWIKISTYLEURL = %PUBURLPATH%/%SYSTEMWEB%/PatternSkin/style.css
+      * Set TWIKICOLORSURL = %PUBURLPATH%/%SYSTEMWEB%/PatternSkin/colors.css
+
+   * [[http://en.wikipedia.org/wiki/Favicon][favicon]]: Attach a =favicon.ico= to a web's WebPreferences or add a =FAVICON= setting to WebPreferences
+      * Set FAVICON = http://twiki.corp.voyager.ph/twiki/pub/Main/TWikiPreferences/voyager.ico
+
+   * Image, URL and alternate tooltip text of web's logo.
+      * Set WEBLOGOIMG = http://twiki.corp.voyager.ph/twiki/pub/Main/TWikiPreferences/voyager_small.png
+      * Set WEBLOGOURL = http://twiki.corp.voyager.ph/twiki/bin/view/Main/WebHome
+      * Set WEBLOGOALT = Voyager Wiki
+   * Set WEBHEADERART = http://twiki.corp.voyager.ph/twiki/pub/Main/TWikiPreferences/bg.jpg
+
+   * TWiki site name:
+      * Set WIKITOOLNAME = Voyager Wiki
+
+#CopyrightNotice
+   * Copyright notice:
+      * Set WEBCOPYRIGHT = %MAKETEXT{"Copyright &&copy; [_1] by the contributing authors. All material on this collaboration platform is the property of Voyager Innovations, Inc." args="%GMTIME{$year}%"}% <br /> %MAKETEXT{"Ideas, requests, problems regarding [_1]? <a href='[_2]'>Send feedback</a>" args="<nop>%WIKITOOLNAME%,mailto:%WIKIWEBMASTER%?subject=%WIKITOOLNAME%%20Feedback%20on%20%BASEWEB%.%BASETOPIC%"}%
+
+   * Simplified Copyright notice for the WebRss feed (don't use any special characters, html tags, entities, wiki markup or WikiWords)
+      * Set WEBRSSCOPYRIGHT = Copyright %GMTIME{"$year"}% by Voyager Innovations, Inc.
+<!-- CUSTOM END -->
+
+---++ Final Preferences
+
+   * =FINALPREFERENCES= locks site-level preferences that are *not* allowed to be overridden by [[%WEBPREFSTOPIC%]] or user preferences:
+      * Set FINALPREFERENCES = ATTACHFILESIZELIMIT, PREVIEWBGIMAGE, WIKITOOLNAME, WIKIHOMEURL, ALLOWROOTCHANGE, DENYROOTCHANGE, TWIKILAYOUTURL, TWIKISTYLEURL, TWIKICOLORSURL, USERSWEB, SYSTEMWEB, DOCWEB
+
+---++ Security Settings
+
+   * Only TWiki administrators are allowed to change this topic:
+      * Set ALLOWTOPICCHANGE = TWikiAdminGroup
+      * Set ALLOWTOPICRENAME = TWikiAdminGroup
+   * Disable WYSIWYG editor for this preferences topic only:
+      * Local TINYMCEPLUGIN_DISABLE = on
+
+__Related topics:__ [[%SYSTEMWEB%.%TOPIC%]], [[%SYSTEMWEB%.TWikiVariables][TWikiVariables]], [[%SYSTEMWEB%.TWikiAccessControl][TWikiAccessControl]]
+
+   * [[%PUBURLPATH%/%WEB%/%TOPIC%/voyager.ico][voyager.ico]]: Voyager Favicon
+
+   * Voyager Logo: <br />
+     <img src="%PUBURLPATH%/%WEB%/%TOPIC%/voyager_small.png" alt="voyager_small.png" width="350" height="60" />
+
+   * Voyager Big Logo: <br />
+     <img src="%PUBURLPATH%/%WEB%/%TOPIC%/voyager.png" alt="voyager.png" width="674" height="172" />
+
+%META:FILEATTACHMENT{name="voyager.ico" attachment="voyager.ico" attr="" comment="Voyager Favicon" date="1379397168" path="voyager.ico" size="1944" user="BaseUserMapping_333" version="1"}%
+%META:FILEATTACHMENT{name="voyager_small.png" attachment="voyager_small.png" attr="" comment="Voyager Logo" date="1379397185" path="voyager_small.png" size="15199" user="BaseUserMapping_333" version="1"}%
+%META:FILEATTACHMENT{name="voyager.png" attachment="voyager.png" attr="" comment="Voyager Big Logo" date="1379397532" path="voyager.png" size="21725" user="BaseUserMapping_333" version="1"}%
+%META:FILEATTACHMENT{name="bg_small.jpg" attachment="bg_small.jpg" attr="" comment="header background small" date="1380002138" path="bg_small.jpg" size="15535" user="BaseUserMapping_333" version="1"}%
+%META:FILEATTACHMENT{name="bg.jpg" attachment="bg.jpg" attr="" comment="header background" date="1380003572" path="bg.jpg" size="12782" user="BaseUserMapping_333" version="1"}%
+@
+
+
+1.8
+log
+@@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="BaseUserMapping_333" date="1379983325" format="1.1" reprev="1.8" version="1.8"}%
+d25 1
+d64 2
+@
+
+
+1.7
+log
+@@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="BaseUserMapping_333" date="1379400556" format="1.1" reprev="1.7" version="1.7"}%
+d12 5
+a16 3
+   * Set SKIN = twikinet,pattern
+   * TWikiNetSkin table attributes:
+      * Set TABLEPLUGIN_TABLEATTRIBUTES = tableborder="1" cellpadding="0" cellspacing="0" valign="top" headercolor="#252b37" headerbg="#d8dde4" headerbgsorted="#ced4dd" headercolor="#252b37" databg="#ffffff,#f2f3f6" databgsorted="#f3f5f7,#e7e9ee" tablerules="cols"
+
+@
+
+
+1.6
+log
+@buildrelease
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="TWikiContributor" date="1274900747" format="1.1" version="6"}%
+d11 4
+d16 2
+d19 4
+d24 11
+d49 12
+@
+
+
+1.5
+log
+@buildrelease
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="TWikiContributor" date="1123279665" format="1.0" version="5"}%
+d9 2
+a10 1
+<!-- Preferences start here -->
+d12 5
+a16 1
+   * =FINALPREFERENCES= locks site-level preferences that are *not* allowed to be overridden by %WEBPREFSTOPIC% or user preferences:
+d19 7
+a25 4
+<!-- Keep this as a security measure:
+   * Set ALLOWTOPICCHANGE = TWikiAdminGroup
+   * Set ALLOWTOPICRENAME = TWikiAdminGroup
+-->
+d27 1
+@
+
+
+1.4
+log
+@buildrelease
+@
+text
+@d1 2
+a2 1
+%META:TOPICINFO{author="TWikiContributor" date="1123279665" format="1.0" version="4"}%
+d4 1
+a4 1
+| Site-level preferences are located in [[%TWIKIWEB%.%TOPIC%]], however this [[%MAINWEB%.%TOPIC%]] prefs topic has override priority and should be used for local customisations. This allows for easier upgrades as you don't need to worry about the shipped preferences clobbering yours. It's easier to keep a handle on if you only copy over the settings you actually change.|
+d6 2
+a7 2
+%EDITPREFERENCES{"TWikiPreferencesForm"}% 
+_(Click for form-based editing of existing preferences.)_
+d9 1
+d12 1
+a12 1
+      * Set FINALPREFERENCES = ATTACHFILESIZELIMIT, PREVIEWBGIMAGE, WIKITOOLNAME, WIKIWEBMASTER, SMTPMAILHOST, SMTPSENDERHOST, ALLOWWEBMANAGE, PROXYHOST, PROXYPORT
+d14 1
+a14 1
+<!-- keep this as a security measure:
+@
+
+
+1.3
+log
+@buildrelease
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="TWikiContributor" date="1123279665" format="1.0" version="3"}%
+d3 1
+a3 1
+| Site-level preferences are located in [[%TWIKIWEB%.%TOPIC%]], however this [[%MAINWEB%.%TOPIC%]] prefs topic has overrride priority and should be used for local customisations. This allows for easier upgrades as you don't need to worry about the shipped preferences clobbering yours. It's easier to keep a handle on if you only copy over the settings you actually change.|
+@
+
+
+1.2
+log
+@buildrelease
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="TWikiContributor" date="1123279665" format="1.0" version="2"}%
+d9 2
+a10 2
+	* =FINALPREFERENCES= locks site-level preferences that are *not* allowed to be overridden by %WEBPREFSTOPIC% or user preferences:
+		* Set FINALPREFERENCES = ATTACHFILESIZELIMIT, PREVIEWBGIMAGE, WIKITOOLNAME, WIKIWEBMASTER, SMTPMAILHOST, SMTPSENDERHOST, ALLOWWEBMANAGE, PROXYHOST, PROXYPORT
+d13 2
+a14 2
+	* Set ALLOWTOPICCHANGE = TWikiAdminGroup
+	* Set ALLOWTOPICRENAME = TWikiAdminGroup
+@
+
+
+1.1
+log
+@none
+@
+text
+@d1 16
+a16 9
+%META:TOPICINFO{author="PeterThoeny" date="1071955740" format="1.0" version="1.1"}%
+The site-level preferences are located in [[%TWIKIWEB%.%TOPIC%]]
+<!-- keep this as a security measure:
+	* Set ALLOWTOPICCHANGE = TWikiAdminGroup
+	* Set ALLOWTOPICRENAME = TWikiAdminGroup
+-->
+
+
+-- Main.PeterThoeny - 20 Dec 2003
+@
+

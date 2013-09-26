@@ -1,0 +1,217 @@
+%META:TOPICINFO{author="TWikiContributor" date="1355038828" format="1.1" version="17"}%
+---+!! JS Calendar Contrib
+<!--
+   Contributions to this contrib package are appreciated. Please update this page at
+   http://twiki.org/cgi-bin/view/Plugins/JSCalendarContrib or provide feedback at
+   http://twiki.org/cgi-bin/view/Plugins/JSCalendarContribDev.
+   If you are a TWiki contributor please update the extension in the SVN repository.
+-->
+<sticky>
+<div style="float:right; background-color:#EBEEF0; margin:0 0 20px 20px; padding: 0 10px 0 10px;">
+%TOC{title="Page contents"}%
+</div>
+<img src="%ATTACHURL%/screenshot.png" width="228" height="196" style="float:right" />
+</sticky>
+%SHORTDESCRIPTION%
+
+---++ Introduction
+
+This module packages the [[http://www.dynarch.com/projects/calendar/][Mishoo JSCalendar]], a DHTML pop-up calendar in a form suitable for use in TWiki forms and TWiki applications.
+
+---++ Using the Calendar in !TWikiForms
+
+This package adds a =date= type to %SYSTEMWEB%.TWikiForms:
+
+| *Type* | *Description* | *Size* | *Value* |
+| =date= | %IF{ "'%BASETOPIC%'!='%TOPIC%'" then="<img src='%PUBURLPATH%/%WEB%/JSCalendarContrib/screenshot-small.png' alt='screenshot-small' width='150' height='139' align='right' /> "}%Single-line text box and a button next to it to pick a date from a popup calendar. The date can also be typed into the text box. The date format can be customized. %IF{ "'%BASETOPIC%'='TWikiForms'" then="[[JSCalendarContrib][See details]]." }% | Text box width in number of characters | Initial (default) date |
+
+Example form definition:
+
+| *Name:* | *Type:* | *Size* | *Values:* | *Tooltip message:* |
+| Start date | date | 12 | %SERVERTIME{$year-$mo-$day}% | Select start date |
+
+---++ Using the Calendar in user forms
+
+You can also use the calendar directly in your own hand-built forms, without
+having to write any code. Just add this inline in the topic text:
+<verbatim>
+%INCLUDE{"%SYSTEMWEB%.JSCalendarContribInline"}%
+</verbatim>
+Then, to display a calendar icon next to a text input field:
+<verbatim>
+<input type="text" id="cal_val_here" />
+<input type="image" src="%PUBURL%/%SYSTEMWEB%/JSCalendarContrib/img.gif" onclick="javascript: return showCalendar('cal_val_here','%Y-%m-%d')" />
+</verbatim>
+If the contrib is installed, you will see such a field here:
+%INCLUDE{"%SYSTEMWEB%.JSCalendarContribInline"}%
+<input type="text" id="cal_val_here" />
+<input type="image" src="%PUBURL%/%SYSTEMWEB%/JSCalendarContrib/img.gif" onclick="javascript: return showCalendar('cal_val_here','%Y-%m-%d')" />
+
+---++ Detailed Documentation
+
+
+Read [[%ATTACHURL%/doc/html/reference.html][the Mishoo documentation]] or
+[[%ATTACHURL%][visit the demo page]] for detailed information on using the
+calendar widget.
+
+This package also includes a small Perl module to make using the calendar
+easier from TWiki plugins. This module includes the functions:
+
+
+---+++ renderDateForEdit
+
+TWiki::Contrib::JSCalendarContrib::renderDateForEdit($name, $value, $format [, \%cssClass]) -> $html
+
+This is the simplest way to use calendars from a plugin.
+   * =$name= is the name of the CGI parameter for the calendar
+     (it should be unique),
+   * =$value= is the current value of the parameter (may be undef)
+   * =$format= is the format to use (optional; the default is set
+     in =configure=). The HTML returned will display a date field
+     and a drop-down calendar.
+   * =\%options= is an optional hash containing base options for
+     the textfield.
+Example:
+<verbatim>
+use TWiki::Contrib::JSCalendarContrib;
+...
+my $fromDate = TWiki::Contrib::JSCalendarContrib::renderDateForEdit(
+   'from', '1 April 1999');
+my $toDate = TWiki::Contrib::JSCalendarContrib::renderDateForEdit(
+   'to', undef, '%Y');
+</verbatim>
+
+
+---+++ addHEAD
+
+TWiki::Contrib::JSCalendarContrib::addHEAD($setup)
+
+This function will automatically add the headers for the calendar to the page
+being rendered. It's intended for use when you want more control over the
+formatting of your calendars than =renderDateForEdit= affords. =$setup= is
+the name of
+the calendar setup module; it can either be omitted, in which case the method
+described in the Mishoo documentation can be used to create calendars, or it
+can be ='twiki'=, in which case a Javascript helper function called
+'showCalendar' is added that simplifies using calendars to set a value in a
+text field. For example, say we wanted to display the date with the calendar
+icon _before_ the text field, using the format =%Y %b %e=
+<verbatim>
+# Add styles and javascript for the calendar
+use TWiki::Contrib::JSCalendarContrib;
+...
+
+sub commonTagsHandler {
+  ....
+  # Enable 'showCalendar'
+  TWiki::Contrib::JSCalendarContrib::addHEAD( 'twiki' );
+
+  my $cal = CGI::image_button(
+      -name => 'img_datefield',
+      -onclick =>
+       "return showCalendar('id_datefield','%Y %b %e')",
+      -src=> TWiki::Func::getPubUrlPath() . '/' .
+             TWiki::Func::getTwikiWebname() .
+             '/JSCalendarContrib/img.gif',
+      -alt => 'Calendar',
+      -align => 'middle' )
+    . CGI::textfield(
+      { name => 'date', id => "id_datefield" });
+  ....
+}
+</verbatim>
+The first parameter to =showCalendar= is the id of the textfield, and the second parameter is the date format. Default format is '%e %B %Y'.
+
+All available date specifiers:
+<verbatim>
+%a - abbreviated weekday name 
+%A - full weekday name 
+%b - abbreviated month name 
+%B - full month name 
+%C - century number 
+%d - the day of the month ( 00 .. 31 ) 
+%e - the day of the month ( 0 .. 31 ) 
+%H - hour ( 00 .. 23 ) 
+%I - hour ( 01 .. 12 ) 
+%j - day of the year ( 000 .. 366 ) 
+%k - hour ( 0 .. 23 ) 
+%l - hour ( 1 .. 12 ) 
+%m - month ( 01 .. 12 ) 
+%M - minute ( 00 .. 59 ) 
+%n - a newline character 
+%p - "PM" or "AM"
+%P - "pm" or "am"
+%S - second ( 00 .. 59 ) 
+%s - number of seconds since Epoch (since Jan 01 1970 00:00:00 UTC) 
+%t - a tab character 
+%U, %W, %V - the week number
+   The week 01 is the week that has the Thursday in the current year,
+   which is equivalent to the week that contains the fourth day of January. 
+   Weeks start on Monday.
+%u - the day of the week ( 1 .. 7, 1 = MON ) 
+%w - the day of the week ( 0 .. 6, 0 = SUN ) 
+%y - year without the century ( 00 .. 99 ) 
+%Y - year including the century ( ex. 1979 ) 
+%% - a literal % character 
+</verbatim>
+
+=addHEAD= can be called from =commonTagsHandler= for adding the header to all pages, or from =beforeEditHandler= just for edit pages etc.
+
+
+
+---++ Installation Instructions
+
+   * For an __automated installation__, run the [[%SCRIPTURL{configure}%][configure]] script and follow "Find More Extensions" in the in the __Extensions__ section.
+      * See the [[http://twiki.org/cgi-bin/view/Plugins/BuildContribInstallationSupplement][installation supplement]] on TWiki.org for more information.
+
+   * Or, follow these __manual installation__ steps:
+      * Download the ZIP file from the extension home on twiki.org (see below).
+      * Unzip ==%TOPIC%.zip== in your twiki installation directory.
+      * Set the ownership of the extracted directories and files to the webserver user.
+      * Install the dependencies (if any).
+
+
+   * An administrator can customize the appearance of the calendar by modifying ={JSCalendarContrib}= settings in the "JSCalendarContrib Settings" section of the configure:
+     | *Setting* | *Default* |
+     | =$TWiki::cfg{JSCalendarContrib}{format}= | ='%Y-%m-%d'= |
+     | =$TWiki::cfg{JSCalendarContrib}{lang}= | ='en'= |
+     | =$TWiki::cfg{JSCalendarContrib}{style}= | ='blue'= |
+
+---++ Contrib Info
+
+   * Set SHORTDESCRIPTION = Pop-up calendar with date picker, for use in TWiki forms, HTML forms and TWiki plugins
+
+|  Author: | TWiki:Main.CrawfordCurrie http://c-dot.co.uk |
+|  Copyright: | &copy; See [[%ATTACHURL%/doc/html/reference.html][the Mishoo documentation]] for Mishoo JSCalendar %BR% &copy; 2007-2012 TWiki:TWiki.TWikiContributor for TWiki !JSCalendarContrib |
+|  License: | GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]]) |
+|  Dependencies: | None |
+|  Version: | 2012-12-08 |
+| Change History: | <!-- versions below in reverse order -->&nbsp; |
+|  2012-12-08: | TWikibug:Item6962: Configure change: Move contrib settings from top level section to Extensions section -- TWiki:Main.PeterThoeny |
+|  2012-08-11: | TWikibug:Item6837: Doc fixes; updated installation instructions -- TWiki:Main.PeterThoeny |
+|  2011-07-08: | TWikibug:Item6725: Change global package variables from "use vars" to "our" -- TWiki:Main.PeterThoeny |
+|  2010-12-03: | TWikibug:Item6609: In %SYSTEMWEB%.TWikiForms type table, automatically list the =date= form field type defined in this contrib -- TWiki:Main.PeterThoeny |
+|  2010-11-17: | TWikibug:Item6530: Doc fixes: Changing TWIKIWEB to SYSTEMWEB |
+|  2010-11-04: | TWikibug:Item6603: Add transparent image for nicer date button in TWiki Forms |
+|  2010-05-16: | TWikibug:Item6433: Doc improvements |
+|  2009-04-27 | TWikibug:Item6254 Adding "JSCalendarContrib Settings" section to configure; changing default to ISO date format; improved documentation (TWiki:Main/PeterThoeny) |
+|  2008-09-10 | TWikibug:Item5991 Applied patch to fix rendering on IE7 |
+|  2007-09-06 | TWikibug:Item4030 Added doc for using the calendar in user forms |
+|  13603 | TWikibug:Item2982 cleaned up the interface to the contrib, re-added a date rendering function with a more generic interface |
+|  11594 | Allow format to be configured. |
+|  11415 | Add a =renderFormFieldForEditHandler= so other plugins can forward to this handler to add the date field to the TWikiForms. (TWiki:Main.ThomasWeigert) |
+|  10247 | TWikibug:Item2054 put the calendar at z-index 2000, way above pattern skin divs. |
+|  6634 | TWikibug:Item453  removed EditTablePlugins private copy of the Mishoo JS calendar, and made sure it works with JSCalendarContrib. Improved the documentation of the JSCalendar while I was there. |
+|  6626 | TWikibug:Item468  updated docs for Dakar release |
+|  5048 | Cairo readiness |
+|  5039 | Split from !SharedCode |
+|  27 Dec 2005 | updated to calendar version 1.0; set style for Safari to win2k-1|
+|  14 Aug 2004 | Separated out from !SharedCode module |
+|  Home: | http://TWiki.org/cgi-bin/view/Plugins/%TOPIC% |
+|  Feedback: | http://TWiki.org/cgi-bin/view/Plugins/%TOPIC%Dev |
+|  Appraisal: | http://TWiki.org/cgi-bin/view/Plugins/%TOPIC%Appraisal |
+
+__Related Topics:__ %SYSTEMWEB%.TWikiPreferences, %SYSTEMWEB%.TWikiForms
+
+%META:FILEATTACHMENT{name="screenshot-small.png" attachment="screenshot-small.png" attr="h" comment="" date="1291363747" path="screenshot-small.png" size="22317" user="TWikiContributor" version="1"}%
+%META:FILEATTACHMENT{name="screenshot.png" attachment="screenshot.png" attr="h" comment="" date="1291364339" path="screenshot.png" size="20920" user="TWikiContributor" version="1"}%

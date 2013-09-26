@@ -1,0 +1,78 @@
+head	1.3;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.3
+date	2012.11.13.01.41.15;	author TWikiContributor;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2012.01.06.21.04.19;	author TWikiContributor;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2011.08.21.04.16.04;	author TWikiContributor;	state Exp;
+branches;
+next	;
+
+
+desc
+@buildrelease
+@
+
+
+1.3
+log
+@buildrelease
+@
+text
+@%META:TOPICINFO{author="TWikiContributor" date="1352770875" format="1.1" version="3"}%
+%META:TOPICPARENT{name="TWikiVariables"}%
+#VarSET
+---+++ SET{"name" value="..."} -- set a variable
+   * Set a named variable that can be retrieved later with =%<nop>GET{}%=. No output is shown, e.g. =%<nop>SET{}%= resolves to an empty string. %IF{"'%INCLUDINGTOPIC%'!='SetGetPlugin'" then="The =%<nop>SET{}<nop>%= and =%<nop>GET{}<nop>%= variables are handled by the SetGetPlugin." }%
+   * Syntax: =%<nop>SET{ "name" value="..." remember="1" }%=
+   * Parameters:
+     | *Parameter* | *Description* | *Default* |
+     | ="name"= | Name of variable. Alphanumeric characters, dashes and underscores can be used. | (required) |
+     | =value="..."= | Value of variable. Escape double quotes with backslash. | (required, may be empty) |
+     | =remember="1"= | If set, the variable will be stored persistently so that it can be used later in any TWiki topic. [[SetGetPlugin#RememberNotes][See important notes]]. | ="0"= |
+   * Example: =%<nop>SET{"lunch" value="Sushi"}%=%IF{"'%INCLUDINGTOPIC%'!='SetGetPlugin'" then=" - [[SetGetPlugin#SetGetExamples][see more examples]]." }%
+   * Category: ApplicationsAndComponentsVariables, DevelopmentVariables
+   * Related: [[%IF{"'%INCLUDINGTOPIC%'='TWikiVariables' OR '%INCLUDINGTOPIC%'='SetGetPlugin'" then="#"}%VarGET][GET]], [[%IF{"'%INCLUDINGTOPIC%'='TWikiVariables'" then="#"}%VarIF][IF]], [[%IF{"'%INCLUDINGTOPIC%'='TWikiVariables' OR '%INCLUDINGTOPIC%'='SetGetPlugin'" then="#"}%VarSETGETDUMP][SETGETDUMP]], %IF{"'%INCLUDINGTOPIC%'!='SetGetPlugin'" then="SetGetPlugin, "}%SpreadSheetPlugin#FuncSET
+@
+
+
+1.2
+log
+@buildrelease
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="TWikiContributor" date="1325883859" format="1.1" version="2"}%
+d7 2
+a8 2
+   * Supported attributes:
+     | *Attribute* | *Comment* | *Default* |
+d13 1
+@
+
+
+1.1
+log
+@buildrelease
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="TWikiContributor" date="1301947470" format="1.1" version="1"}%
+d13 1
+a13 1
+   * Related: [[%IF{"'%INCLUDINGTOPIC%'='TWikiVariables' OR '%INCLUDINGTOPIC%'='SetGetPlugin'" then="#"}%VarGET][GET]], [[%IF{"'%INCLUDINGTOPIC%'='TWikiVariables'" then="#"}%VarIF][IF]], %IF{"'%INCLUDINGTOPIC%'!='SetGetPlugin'" then="SetGetPlugin, "}%SpreadSheetPlugin#FuncSET
+@

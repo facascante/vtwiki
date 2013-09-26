@@ -1,0 +1,36 @@
+%META:TOPICINFO{author="TWikiContributor" date="1304669133" format="1.1" version="4"}%
+%INCLUDE{%SYSTEMWEB%.WebChangesRightBox}%
+---+!! %MAKETEXT{"Welcome to the [_1] web" args="<nop>%WEB%"}%
+
+%MAKETEXT{"Use this web to try out TWiki. Everybody is invited to add or delete some stuff. It is recommended to walk through the [_1] to learn the basics of TWiki. It is good practice to sign your contributions with your [_2] and date." args="[[%SYSTEMWEB%.TWikiTutorial][TWiki Tutorial]], %SYSTEMWEB%.WikiName"}%
+
+---++ %MAKETEXT{"Test Topics"}%
+
+<form action='%SCRIPTURLPATH{"edit"}%/%WEB%/'> 
+%ICON{"newtopic"}% %MAKETEXT{"Create a new document by name:"}% %MAKETEXT{"(Use a topic name in TWiki.WikiNotation)"}% <br /> 
+<input class="twikiInputField" type="text" name="topic" size="32" />&nbsp;<input type="submit" class="twikiSubmit" value='%MAKETEXT{"Create by Name"}%' />
+<input type="hidden" name="onlywikiname" value="on" />
+<input type="hidden" name="onlynewtopic" value="on" />
+</form>
+
+<form action='%SCRIPTURLPATH{"edit"}%/%BASEWEB%/TestTopicAUTOINC0' name="createNewTestTopic">
+%ICON{"newtopic"}% %MAKETEXT{"Create a new auto-numbered test topic:"}%
+<input type="hidden" name="t" value="%SERVERTIME{$hou$min$sec}%" />
+<input type="submit" class="twikiSubmit" value='%MAKETEXT{"Create <nop>TestTopic###"}%' />
+</form>
+
+---++ <nop>%WEB% Web Utilities
+
+   * [[%SYSTEMWEB%.WelcomeGuest][WelcomeGuest]] - for first time visitors
+   * [[%SYSTEMWEB%.TWikiRegistration][Registration]] - become a <nop>%WIKITOOLNAME% user
+   * [[WebSearch]] - simple search
+   * [[WebSearchAdvanced]] - %MAKETEXT{"advanced search"}%
+   * [[WebTopicList]] - all topics in alphabetical order
+   * [[WebChanges]] - recent topic changes in this web
+   * [[WebNotify]] - subscribe to an e-mail alert sent when topics change
+   * [[WebRss]], [[WebAtom]] - RSS and ATOM news feeds of topic changes
+   * [[WebStatistics]] - listing popular topics and top contributors
+   * [[WebTopMenu]] - top menu definition
+   * [[WebPreferences]] - preferences of this web
+
+   * Set ALLOWTOPICCHANGE = Main.TWikiAdminGroup

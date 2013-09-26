@@ -1,0 +1,65 @@
+%META:TOPICINFO{author="BaseUserMapping_333" date="1380003591" format="1.1" reprev="1.9" version="1.9"}%
+---+!! %MAKETEXT{"Local customisations of site-wide preferences"}%
+
+<div class="twikiHelp">%ICON{"info"}% %MAKETEXT{"Site-level preferences are located in [_1], however this [_2] prefs topic has override priority and should be used for local customisations. This allows for easier upgrades as you don't need to worry about the shipped preferences clobbering yours. It's easier to keep a handle on if you only copy over the settings you actually change." args="[[%SYSTEMWEB%.%TOPIC%]], [[%USERSWEB%.%TOPIC%]]"}% </div>
+
+%EDITPREFERENCES{"%SYSTEMWEB%/TWikiPreferencesForm"}%
+%IF{"$ SCRIPTNAME != 'viewauth%SCRIPTSUFFIX%'" then="<span class='twikiGrayText'>%MAKETEXT{"Quick edit of existing preferences (edit the topic text to set new preferences)"}%</span>" }%
+
+---++ Site Specific Site-wide Preferences
+<!-- Add site-wide preferences here -->
+<!-- CUSTOM START -->
+   * Set SKIN = tagme, pattern
+   * %SYSTEMWEB%.PatternSkin settings:
+      * Set TWIKILAYOUTURL = %PUBURLPATH%/%SYSTEMWEB%/PatternSkin/layout.css
+      * Set TWIKISTYLEURL = %PUBURLPATH%/%SYSTEMWEB%/PatternSkin/style.css
+      * Set TWIKICOLORSURL = %PUBURLPATH%/%SYSTEMWEB%/PatternSkin/colors.css
+
+   * [[http://en.wikipedia.org/wiki/Favicon][favicon]]: Attach a =favicon.ico= to a web's WebPreferences or add a =FAVICON= setting to WebPreferences
+      * Set FAVICON = http://twiki.corp.voyager.ph/twiki/pub/Main/TWikiPreferences/voyager.ico
+
+   * Image, URL and alternate tooltip text of web's logo.
+      * Set WEBLOGOIMG = http://twiki.corp.voyager.ph/twiki/pub/Main/TWikiPreferences/voyager_small.png
+      * Set WEBLOGOURL = http://twiki.corp.voyager.ph/twiki/bin/view/Main/WebHome
+      * Set WEBLOGOALT = Voyager Wiki
+   * Set WEBHEADERART = http://twiki.corp.voyager.ph/twiki/pub/Main/TWikiPreferences/bg.jpg
+
+   * TWiki site name:
+      * Set WIKITOOLNAME = Voyager Wiki
+
+#CopyrightNotice
+   * Copyright notice:
+      * Set WEBCOPYRIGHT = %MAKETEXT{"Copyright &&copy; [_1] by the contributing authors. All material on this collaboration platform is the property of Voyager Innovations, Inc." args="%GMTIME{$year}%"}% <br /> %MAKETEXT{"Ideas, requests, problems regarding [_1]? <a href='[_2]'>Send feedback</a>" args="<nop>%WIKITOOLNAME%,mailto:%WIKIWEBMASTER%?subject=%WIKITOOLNAME%%20Feedback%20on%20%BASEWEB%.%BASETOPIC%"}%
+
+   * Simplified Copyright notice for the WebRss feed (don't use any special characters, html tags, entities, wiki markup or WikiWords)
+      * Set WEBRSSCOPYRIGHT = Copyright %GMTIME{"$year"}% by Voyager Innovations, Inc.
+<!-- CUSTOM END -->
+
+---++ Final Preferences
+
+   * =FINALPREFERENCES= locks site-level preferences that are *not* allowed to be overridden by [[%WEBPREFSTOPIC%]] or user preferences:
+      * Set FINALPREFERENCES = ATTACHFILESIZELIMIT, PREVIEWBGIMAGE, WIKITOOLNAME, WIKIHOMEURL, ALLOWROOTCHANGE, DENYROOTCHANGE, TWIKILAYOUTURL, TWIKISTYLEURL, TWIKICOLORSURL, USERSWEB, SYSTEMWEB, DOCWEB
+
+---++ Security Settings
+
+   * Only TWiki administrators are allowed to change this topic:
+      * Set ALLOWTOPICCHANGE = TWikiAdminGroup
+      * Set ALLOWTOPICRENAME = TWikiAdminGroup
+   * Disable WYSIWYG editor for this preferences topic only:
+      * Local TINYMCEPLUGIN_DISABLE = on
+
+__Related topics:__ [[%SYSTEMWEB%.%TOPIC%]], [[%SYSTEMWEB%.TWikiVariables][TWikiVariables]], [[%SYSTEMWEB%.TWikiAccessControl][TWikiAccessControl]]
+
+   * [[%PUBURLPATH%/%WEB%/%TOPIC%/voyager.ico][voyager.ico]]: Voyager Favicon
+
+   * Voyager Logo: <br />
+     <img src="%PUBURLPATH%/%WEB%/%TOPIC%/voyager_small.png" alt="voyager_small.png" width="350" height="60" />
+
+   * Voyager Big Logo: <br />
+     <img src="%PUBURLPATH%/%WEB%/%TOPIC%/voyager.png" alt="voyager.png" width="674" height="172" />
+
+%META:FILEATTACHMENT{name="voyager.ico" attachment="voyager.ico" attr="" comment="Voyager Favicon" date="1379397168" path="voyager.ico" size="1944" user="BaseUserMapping_333" version="1"}%
+%META:FILEATTACHMENT{name="voyager_small.png" attachment="voyager_small.png" attr="" comment="Voyager Logo" date="1379397185" path="voyager_small.png" size="15199" user="BaseUserMapping_333" version="1"}%
+%META:FILEATTACHMENT{name="voyager.png" attachment="voyager.png" attr="" comment="Voyager Big Logo" date="1379397532" path="voyager.png" size="21725" user="BaseUserMapping_333" version="1"}%
+%META:FILEATTACHMENT{name="bg_small.jpg" attachment="bg_small.jpg" attr="" comment="header background small" date="1380002138" path="bg_small.jpg" size="15535" user="BaseUserMapping_333" version="1"}%
+%META:FILEATTACHMENT{name="bg.jpg" attachment="bg.jpg" attr="" comment="header background" date="1380003572" path="bg.jpg" size="12782" user="BaseUserMapping_333" version="1"}%

@@ -1,0 +1,94 @@
+| 2013-09-17 - 15:28 | TWiki::Plugins::OpenIdRpContrib::initPlugin is not defined
+| 2013-09-17 - 15:28 | TWiki::Plugins::OpenIdRpContrib::initPlugin is not defined
+| 2013-09-17 - 15:28 | TWiki::Plugins::OpenIdRpContrib::initPlugin is not defined
+| 2013-09-17 - 15:28 | TWiki::Plugins::OpenIdRpContrib::initPlugin is not defined
+| 2013-09-18 - 14:33 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 14:33 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 14:35 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 14:35 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 14:35 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 14:35 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 14:35 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 14:35 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 14:35 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 14:35 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 14:35 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 14:37 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 14:39 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 14:44 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 14:45 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 14:45 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 14:45 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 14:45 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 14:45 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 14:45 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 14:50 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 15:24 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 15:26 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 15:27 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 16:09 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 16:11 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 16:15 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 16:21 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 16:21 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 16:21 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 16:21 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 16:21 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 16:21 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 16:21 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 16:21 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 16:21 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 16:22 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 16:22 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 16:22 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 16:22 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 16:23 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 16:23 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 16:23 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 16:23 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+
+| 2013-09-18 - 16:48 | Can't locate object method "Vars" via package "TWiki::Request" at /var/www/twiki/lib/TWiki/LoginManager/OpenID.pm line 816.
+

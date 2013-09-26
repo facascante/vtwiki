@@ -1,0 +1,62 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2013.02.16.23.22.27;	author TWikiContributor;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2008.01.22.03.21.25;	author TWikiContributor;	state Exp;
+branches;
+next	;
+
+
+desc
+@buildrelease
+@
+
+
+1.2
+log
+@buildrelease
+@
+text
+@---+ Package ==
+*extends* <tt>CGI::Session::ErrorHandler </tt>
+
+
+%TOC%
+=head1 NAME
+
+CGI::Session::ID::md5 - default CGI::Session ID generator
+
+=head1 SYNOPSIS
+
+    use CGI::Session;
+    $s = CGI::Session->new("id:md5", undef);
+
+=head1 DESCRIPTION
+
+CGI::Session::ID::MD5 is to generate MD5 encoded hexadecimal random ids. The library does not require any arguments. 
+
+=head1 LICENSING
+
+For support and licensing see L<CGI::Session|CGI::Session>
+
+@
+
+
+1.1
+log
+@buildrelease
+@
+text
+@d13 1
+a13 1
+    $s = new CGI::Session("id:md5", undef);
+@

@@ -1,0 +1,46 @@
+head	1.2;
+access	;
+symbols;
+locks; strict;
+comment	@# @;
+
+1.2
+date	2013.09.24.05.56.53;	author BaseUserMapping_333;	state Exp;
+branches;	
+next	1.1;
+1.1
+date	2009.03.30.09.18.25;	author TWikiContributor;	state Exp;
+branches;	
+next	;
+
+
+desc
+@buildrelease
+@
+
+
+1.2
+log
+@moved@
+text
+@%META:TOPICINFO{author="BaseUserMapping_333" date="1380002213" format="1.1" reprev="1.2" version="1.2"}%
+%META:TOPICPARENT{name="WebHome"}%
+---+ %MAKETEXT{"Placeholder for trashed attachments"}%
+
+
+%META:FILEATTACHMENT{name="bg_small.png" attachment="bg_small.png" attr="" comment="header background small" date="1380002030" moveby="BaseUserMapping_333" movedto="Trash.TrashAttachment.bg_small.png" movedwhen="1380002194" movefrom="Main.TWikiPreferences.bg_small.png" path="bg_small.png" size="97094" user="BaseUserMapping_333" version="2"}%
+%META:FILEATTACHMENT{name="bg.png" attachment="bg.png" attr="" comment="header background" date="1380000858" moveby="BaseUserMapping_333" movedto="Trash.TrashAttachment.bg.png" movedwhen="1380002213" movefrom="Main.TWikiPreferences.bg.png" path="bg.png" size="102005" user="BaseUserMapping_333" version="2"}%
+@
+
+
+1.1
+log
+@buildrelease
+@
+text
+@d1 1
+a1 1
+%META:TOPICINFO{author="TWikiContributor" date="1092762941" format="1.0" version="1"}%
+d6 2
+@
+

@@ -1,0 +1,441 @@
+# Cached icon data; do not edit. See TWiki.TWikiDocGraphics
+_default: _default, TWiki, TWikiDocGraphics, gif, 16, 16, Default
+abs: wav, TWiki, TWikiDocGraphics, gif, 16, 16, Waveform sound file
+action-item: action-item, TWiki, TWikiDocGraphics, gif, 16, 16, Action item
+addon: addon, TWiki, TWikiDocGraphics, gif, 16, 16, Add-on
+air: air, TWiki, TWikiDocGraphics, gif, 16, 16, Adobe Air
+airplane: airplane, TWiki, TWikiDocGraphics, gif, 16, 16, Airplane
+application: application, TWiki, TWikiDocGraphics, gif, 16, 16, Application
+arc: zip, TWiki, TWikiDocGraphics, gif, 16, 16, Compressed Zip archive
+arrowbdown: arrowbdown, TWiki, TWikiDocGraphics, gif, 16, 16, Arrow blue down
+arrowbleft: arrowbleft, TWiki, TWikiDocGraphics, gif, 16, 16, Arrow blue left
+arrowbright: arrowbright, TWiki, TWikiDocGraphics, gif, 16, 16, Arrow blue right
+arrowbup: arrowbup, TWiki, TWikiDocGraphics, gif, 16, 16, Arrow blue up
+arrowdot: arrowdot, TWiki, TWikiDocGraphics, gif, 16, 16, Meet here
+arrowdown: arrowdown, TWiki, TWikiDocGraphics, gif, 16, 16, Arrow down
+arrowleft: arrowleft, TWiki, TWikiDocGraphics, gif, 16, 16, Arrow left
+arrowright: arrowright, TWiki, TWikiDocGraphics, gif, 16, 16, Arrow right
+arrowup: arrowup, TWiki, TWikiDocGraphics, gif, 16, 16, Arrow up
+as: as, TWiki, TWikiDocGraphics, gif, 16, 16, ActionScript
+attachfile: attachfile, TWiki, TWikiDocGraphics, gif, 16, 16, Attach file
+avi: mov, TWiki, TWikiDocGraphics, gif, 16, 16, Quicktime movie
+award: award, TWiki, TWikiDocGraphics, gif, 16, 16, Award
+barcode: barcode, TWiki, TWikiDocGraphics, gif, 16, 16, Barcode
+bat: bat, TWiki, TWikiDocGraphics, gif, 16, 16, MS-DOS batch file
+bed: bed, TWiki, TWikiDocGraphics, gif, 16, 16, Bed
+bitly: bitly, TWiki, TWikiDocGraphics, gif, 16, 16, Bit.ly
+blank: blank, TWiki, TWikiDocGraphics, gif, 16, 16, Blank box
+blank-bg: blank-bg, TWiki, TWikiDocGraphics, gif, 16, 16, Blank box, transparent
+blogger: blogger, TWiki, TWikiDocGraphics, gif, 16, 16, Blogger
+bmp: bmp, TWiki, TWikiDocGraphics, gif, 16, 16, Bitmap
+bomb: bomb, TWiki, TWikiDocGraphics, gif, 16, 16, Bomb
+book: book, TWiki, TWikiDocGraphics, gif, 16, 16, Book
+bridge: bridge, TWiki, TWikiDocGraphics, gif, 16, 16, Bridge
+bubble: bubble, TWiki, TWikiDocGraphics, gif, 16, 16, Speech bubble
+bug: bug, TWiki, TWikiDocGraphics, gif, 16, 16, Bug
+building: building, TWiki, TWikiDocGraphics, gif, 16, 16, Building
+buildings: buildings, TWiki, TWikiDocGraphics, gif, 16, 16, Buildings
+c: c, TWiki, TWikiDocGraphics, gif, 16, 16, C source code file
+cachetopic: cachetopic, TWiki, TWikiDocGraphics, gif, 16, 16, Cache topic
+calculator: calculator, TWiki, TWikiDocGraphics, gif, 16, 16, Calculator
+changes: changes, TWiki, TWikiDocGraphics, gif, 16, 16, Changes
+changes-small: changes-small, TWiki, TWikiDocGraphics, gif, 13, 13, Changes
+chart-bar: chart-bar, TWiki, TWikiDocGraphics, gif, 16, 16, Bar chart
+chart-pie: chart-pie, TWiki, TWikiDocGraphics, gif, 16, 16, Pie chart
+checked: checked, TWiki, TWikiDocGraphics, gif, 16, 16, Checked checkbox
+checked-round: checked-round, TWiki, TWikiDocGraphics, gif, 16, 16, Checked checkbox, round
+checked-square: checked-square, TWiki, TWikiDocGraphics, gif, 16, 16, Checked checkbox, square
+choice-cancel: choice-cancel, TWiki, TWikiDocGraphics, gif, 16, 16, Cancel
+choice-no: choice-no, TWiki, TWikiDocGraphics, gif, 16, 16, No
+choice-yes: choice-yes, TWiki, TWikiDocGraphics, gif, 16, 16, Yes / Done
+class: java, TWiki, TWikiDocGraphics, gif, 16, 16, Java source code file
+clock: clock, TWiki, TWikiDocGraphics, gif, 16, 16, Clock
+close: close, TWiki, TWikiDocGraphics, gif, 16, 16, Close
+closed: closed, TWiki, TWikiDocGraphics, gif, 48, 16, CLOSED
+code: code, TWiki, TWikiDocGraphics, gif, 16, 16, Code
+color-wheel: color-wheel, TWiki, TWikiDocGraphics, gif, 16, 16, Color wheel
+color-wheel-bg: color-wheel-bg, TWiki, TWikiDocGraphics, gif, 16, 16, Color wheel, transparent
+comments: comments, TWiki, TWikiDocGraphics, gif, 16, 16, Comments
+connections: connections, TWiki, TWikiDocGraphics, gif, 16, 16, Connections
+css: css, TWiki, TWikiDocGraphics, gif, 16, 16, Cascading Style Sheet file
+dashboard: dashboard, TWiki, TWikiDocGraphics, gif, 16, 16, Dashboard
+database: database, TWiki, TWikiDocGraphics, gif, 16, 16, Database
+days: days, TWiki, TWikiDocGraphics, gif, 16, 16, Days, Calendar
+delicious: delicious, TWiki, TWikiDocGraphics, gif, 16, 16, Delicious
+digg: digg, TWiki, TWikiDocGraphics, gif, 16, 16, Digg
+dll: dll, TWiki, TWikiDocGraphics, gif, 16, 16, Dynamic Linked Library; Microsoft application file
+doc: doc, TWiki, TWikiDocGraphics, gif, 16, 16, Microsoft Word file
+done: done, TWiki, TWikiDocGraphics, gif, 37, 16, DONE
+dot_ld: dot_ld, TWiki, TWikiDocGraphics, gif, 16, 16, Dot graph left-down
+dot_lr: dot_lr, TWiki, TWikiDocGraphics, gif, 16, 16, Dot graph left-right
+dot_lrd: dot_lrd, TWiki, TWikiDocGraphics, gif, 16, 16, Dot graph left-right-down
+dot_rd: dot_rd, TWiki, TWikiDocGraphics, gif, 16, 16, Dot graph right-down
+dot_ud: dot_ud, TWiki, TWikiDocGraphics, gif, 16, 16, Dot graph up-down
+dot_udl: dot_udl, TWiki, TWikiDocGraphics, gif, 16, 16, Dot graph up-down-left
+dot_udlr: dot_udlr, TWiki, TWikiDocGraphics, gif, 16, 16, Dot graph up-down-left-right
+dot_udr: dot_udr, TWiki, TWikiDocGraphics, gif, 16, 16, Dot graph up-down-right
+dot_ul: dot_ul, TWiki, TWikiDocGraphics, gif, 16, 16, Dot graph up-left
+dot_ulr: dot_ulr, TWiki, TWikiDocGraphics, gif, 16, 16, Dot graph up-left-right
+dot_ur: dot_ur, TWiki, TWikiDocGraphics, gif, 16, 16, Dot graph up-right
+down: down, TWiki, TWikiDocGraphics, gif, 16, 16, Down
+download: download, TWiki, TWikiDocGraphics, gif, 16, 16, Download
+edittable: edittable, TWiki, TWikiDocGraphics, gif, 16, 16, Edit table
+edittopic: edittopic, TWiki, TWikiDocGraphics, gif, 16, 16, Edit topic
+else: else, TWiki, TWikiDocGraphics, gif, 16, 16, Unknown file format
+email: eml, TWiki, TWikiDocGraphics, gif, 16, 16, Microsoft Outlook e-mail file
+empty: empty, TWiki, TWikiDocGraphics, gif, 16, 16, Empty transparent 16x16 spacer
+exe: exe, TWiki, TWikiDocGraphics, gif, 16, 16, Microsoft Executable file
+external: external, TWiki, TWikiDocGraphics, gif, 16, 16, External site
+external-link: external-link, TWiki, TWikiDocGraphics, gif, 13, 12, External link
+facebook: facebook, TWiki, TWikiDocGraphics, gif, 16, 16, Facebook
+fax: fax, TWiki, TWikiDocGraphics, gif, 16, 16, Fax
+feed: feed, TWiki, TWikiDocGraphics, gif, 16, 16, RSS feed, rounded corners
+filter: filter, TWiki, TWikiDocGraphics, gif, 16, 16, Filter
+fla: fla, TWiki, TWikiDocGraphics, gif, 16, 16, Macromedia Flash Movie
+flag: flag, TWiki, TWikiDocGraphics, gif, 16, 16, Flag
+flag-gray: flag-gray, TWiki, TWikiDocGraphics, gif, 16, 16, Gray flag
+flag-gray-small: flag-gray-small, TWiki, TWikiDocGraphics, gif, 13, 13, Small gray flag
+folder: folder, TWiki, TWikiDocGraphics, gif, 16, 16, Folder
+fon: fon, TWiki, TWikiDocGraphics, gif, 16, 16, Windows bitmapped font file
+food: food, TWiki, TWikiDocGraphics, gif, 16, 16, Food
+gear: gear, TWiki, TWikiDocGraphics, gif, 16, 16, Gear
+gif: gif, TWiki, TWikiDocGraphics, gif, 16, 16, GIF
+globe: globe, TWiki, TWikiDocGraphics, gif, 16, 16, Globe
+go_back: go_back, TWiki, TWikiDocGraphics, gif, 16, 16, Go back
+go_end: go_end, TWiki, TWikiDocGraphics, gif, 16, 16, Go to end
+go_fb: go_fb, TWiki, TWikiDocGraphics, gif, 16, 16, Go fast back
+go_ff: go_ff, TWiki, TWikiDocGraphics, gif, 16, 16, Go fast forward
+go_forward: go_forward, TWiki, TWikiDocGraphics, gif, 16, 16, Go forward
+go_start: go_start, TWiki, TWikiDocGraphics, gif, 16, 16, Go to start
+goal: goal, TWiki, TWikiDocGraphics, gif, 16, 16, Goal
+google: google, TWiki, TWikiDocGraphics, gif, 16, 16, Google
+google-plus: google-plus, TWiki, TWikiDocGraphics, gif, 16, 16, Google Plus
+graduation: graduation, TWiki, TWikiDocGraphics, gif, 16, 16, Graduation
+group: group, TWiki, TWikiDocGraphics, gif, 16, 16, Group
+h: h, TWiki, TWikiDocGraphics, gif, 16, 16, Header file
+hand: hand, TWiki, TWikiDocGraphics, gif, 16, 16, Pointing hand
+heart: heart, TWiki, TWikiDocGraphics, gif, 16, 16, Heart
+help: help, TWiki, TWikiDocGraphics, gif, 16, 16, Help
+help-video: help-video, TWiki, TWikiDocGraphics, gif, 16, 16, Help video
+hlp: hlp, TWiki, TWikiDocGraphics, gif, 16, 16, Standard help file
+home: home, TWiki, TWikiDocGraphics, gif, 16, 16, Home
+hourglass: hourglass, TWiki, TWikiDocGraphics, gif, 16, 16, Hourglass
+htm: html, TWiki, TWikiDocGraphics, gif, 16, 16, HTML
+index: index, TWiki, TWikiDocGraphics, gif, 16, 16, Index
+indexlist: indexlist, TWiki, TWikiDocGraphics, gif, 16, 16, Index list
+inf: txt, TWiki, TWikiDocGraphics, gif, 16, 16, Text
+info: info, TWiki, TWikiDocGraphics, gif, 16, 16, Info
+jfif: jpg, TWiki, TWikiDocGraphics, gif, 16, 16, JPEG
+js: js, TWiki, TWikiDocGraphics, gif, 16, 16, JavaScript
+key: key, TWiki, TWikiDocGraphics, gif, 16, 16, Key
+led-aqua: led-aqua, TWiki, TWikiDocGraphics, gif, 16, 16, Aqua led
+led-blue: led-blue, TWiki, TWikiDocGraphics, gif, 16, 16, Blue led
+led-box-aqua: led-box-aqua, TWiki, TWikiDocGraphics, gif, 16, 16, Aqua led
+led-box-blue: led-box-blue, TWiki, TWikiDocGraphics, gif, 16, 16, Blue led
+led-box-gray: led-box-gray, TWiki, TWikiDocGraphics, gif, 16, 16, Gray led
+led-box-green: led-box-green, TWiki, TWikiDocGraphics, gif, 16, 16, Green led
+led-box-orange: led-box-orange, TWiki, TWikiDocGraphics, gif, 16, 16, Orange led
+led-box-purple: led-box-purple, TWiki, TWikiDocGraphics, gif, 16, 16, Purple led
+led-box-red: led-box-red, TWiki, TWikiDocGraphics, gif, 16, 16, Red led
+led-box-yellow: led-box-yellow, TWiki, TWikiDocGraphics, gif, 16, 16, Yellow led
+led-cup-aqua: led-cup-aqua, TWiki, TWikiDocGraphics, gif, 16, 16, Aqua LED
+led-cup-blue: led-cup-blue, TWiki, TWikiDocGraphics, gif, 16, 16, Blue LED
+led-cup-gray: led-cup-gray, TWiki, TWikiDocGraphics, gif, 16, 16, Gray LED
+led-cup-green: led-cup-green, TWiki, TWikiDocGraphics, gif, 16, 16, Green LED
+led-cup-green-plus: led-cup-green-plus, TWiki, TWikiDocGraphics, gif, 16, 16, Green plus LED
+led-cup-orange: led-cup-orange, TWiki, TWikiDocGraphics, gif, 16, 16, Orange LED
+led-cup-purple: led-cup-purple, TWiki, TWikiDocGraphics, gif, 16, 16, Purple LED
+led-cup-red: led-cup-red, TWiki, TWikiDocGraphics, gif, 16, 16, Red LED
+led-cup-red-close: led-cup-red-close, TWiki, TWikiDocGraphics, gif, 16, 16, Red close LED
+led-cup-yellow: led-cup-yellow, TWiki, TWikiDocGraphics, gif, 16, 16, Yellow LED
+led-cup-yellow-minus: led-cup-yellow-minus, TWiki, TWikiDocGraphics, gif, 16, 16, Yellow minus LED
+led-gray: led-gray, TWiki, TWikiDocGraphics, gif, 16, 16, Gray led
+led-green: led-green, TWiki, TWikiDocGraphics, gif, 16, 16, Green led
+led-orange: led-orange, TWiki, TWikiDocGraphics, gif, 16, 16, Orange led
+led-purple: led-purple, TWiki, TWikiDocGraphics, gif, 16, 16, Purple led
+led-red: led-red, TWiki, TWikiDocGraphics, gif, 16, 16, Red led
+led-yellow: led-yellow, TWiki, TWikiDocGraphics, gif, 16, 16, Yellow led
+left: left, TWiki, TWikiDocGraphics, gif, 16, 16, Left
+legal: legal, TWiki, TWikiDocGraphics, gif, 16, 16, Legal
+line_ld: line_ld, TWiki, TWikiDocGraphics, gif, 16, 16, Line graph left-down
+line_lr: line_lr, TWiki, TWikiDocGraphics, gif, 16, 16, Line graph left-right
+line_lrd: line_lrd, TWiki, TWikiDocGraphics, gif, 16, 16, Line graph left-right-down
+line_rd: line_rd, TWiki, TWikiDocGraphics, gif, 16, 16, Line graph right-down
+line_ud: line_ud, TWiki, TWikiDocGraphics, gif, 16, 16, Line graph up-down
+line_udl: line_udl, TWiki, TWikiDocGraphics, gif, 16, 16, Line graph up-down-left
+line_udlr: line_udlr, TWiki, TWikiDocGraphics, gif, 16, 16, Line graph up-down-left-right
+line_udr: line_udr, TWiki, TWikiDocGraphics, gif, 16, 16, Line graph up-down-right
+line_ul: line_ul, TWiki, TWikiDocGraphics, gif, 16, 16, Line graph up-left
+line_ulr: line_ulr, TWiki, TWikiDocGraphics, gif, 16, 16, Line graph up-left-right
+line_ur: line_ur, TWiki, TWikiDocGraphics, gif, 16, 16, Line graph up-right
+line_ur_gray: line_ur_gray, TWiki, TWikiDocGraphics, gif, 16, 16, Line graph up-right, gray
+linkedin: linkedin, TWiki, TWikiDocGraphics, gif, 16, 16, LinkedIn
+lock: lock, TWiki, TWikiDocGraphics, gif, 16, 16, Lock
+lock-open: lock-open, TWiki, TWikiDocGraphics, gif, 16, 16, Lock, unlocked
+lockfolder: lockfolder, TWiki, TWikiDocGraphics, gif, 16, 16, Locked folder
+lockfoldergray: lockfoldergray, TWiki, TWikiDocGraphics, gif, 16, 16, Locked folder, gray
+locktopic: locktopic, TWiki, TWikiDocGraphics, gif, 16, 16, Locked topic
+locktopicgray: locktopicgray, TWiki, TWikiDocGraphics, gif, 16, 16, Locked topic, gray
+login: login, TWiki, TWikiDocGraphics, gif, 16, 16, Login
+logout: logout, TWiki, TWikiDocGraphics, gif, 16, 16, Log out
+luggage: luggage, TWiki, TWikiDocGraphics, gif, 16, 16, Luggage
+mail: mail, TWiki, TWikiDocGraphics, gif, 16, 16, Mail
+map: map, TWiki, TWikiDocGraphics, gif, 16, 16, Map
+mda: mdb, TWiki, TWikiDocGraphics, gif, 16, 16, Microsoft Access database File
+mechanics: mechanics, TWiki, TWikiDocGraphics, gif, 16, 16, Mechanics
+meeting: meeting, TWiki, TWikiDocGraphics, gif, 16, 16, Meeting
+megaphone: megaphone, TWiki, TWikiDocGraphics, gif, 16, 16, Megaphone
+menu-down: menu-down, TWiki, TWikiDocGraphics, gif, 14, 16, Menu dropdown
+menu-right: menu-right, TWiki, TWikiDocGraphics, gif, 10, 16, Menu arrow right
+milestone: milestone, TWiki, TWikiDocGraphics, gif, 16, 16, Milestone
+minus: minus, TWiki, TWikiDocGraphics, gif, 16, 16, Minus
+mission: mission, TWiki, TWikiDocGraphics, gif, 16, 16, Mission
+mobile: mobile, TWiki, TWikiDocGraphics, gif, 16, 16, Mobile
+monospace: monospace, TWiki, TWikiDocGraphics, gif, 16, 16, Monospace
+more: more, TWiki, TWikiDocGraphics, gif, 16, 16, Read more
+more-small: more-small, TWiki, TWikiDocGraphics, gif, 13, 13, Read more
+move: move, TWiki, TWikiDocGraphics, gif, 16, 16, Move
+new: new, TWiki, TWikiDocGraphics, gif, 30, 16, NEW
+newtopic: newtopic, TWiki, TWikiDocGraphics, gif, 16, 16, New topic
+note: note, TWiki, TWikiDocGraphics, gif, 16, 16, Note
+notify: notify, TWiki, TWikiDocGraphics, gif, 16, 16, Notify
+package: package, TWiki, TWikiDocGraphics, gif, 16, 16, Package
+parent_gray: parent_gray, TWiki, TWikiDocGraphics, gif, 16, 16, Parent arrow
+parked: parked, TWiki, TWikiDocGraphics, gif, 16, 16, Parked
+parts: parts, TWiki, TWikiDocGraphics, gif, 16, 16, Parts
+pdf: pdf, TWiki, TWikiDocGraphics, gif, 16, 16, PDF
+pencil: pencil, TWiki, TWikiDocGraphics, gif, 16, 16, Pencil
+perl: pl, TWiki, TWikiDocGraphics, gif, 16, 16, Perl source code file
+person: person, TWiki, TWikiDocGraphics, gif, 16, 16, Person
+persona: persona, TWiki, TWikiDocGraphics, gif, 16, 16, Persona
+persons: persons, TWiki, TWikiDocGraphics, gif, 16, 16, Persons
+pfm: ttf, TWiki, TWikiDocGraphics, gif, 16, 16, True Type font
+phone: phone, TWiki, TWikiDocGraphics, gif, 16, 16, Phone
+photo: photo, TWiki, TWikiDocGraphics, gif, 13, 10, Photo
+plug: plug, TWiki, TWikiDocGraphics, gif, 16, 16, Plug
+plugin: plugin, TWiki, TWikiDocGraphics, gif, 16, 16, Plugin
+plus: plus, TWiki, TWikiDocGraphics, gif, 16, 16, Plus
+png: png, TWiki, TWikiDocGraphics, gif, 16, 16, PNG
+pot: ppt, TWiki, TWikiDocGraphics, gif, 16, 16, PowerPoint
+presentation: presentation, TWiki, TWikiDocGraphics, gif, 16, 16, Presentation
+printtopic: printtopic, TWiki, TWikiDocGraphics, gif, 16, 16, Print topic
+process: process, TWiki, TWikiDocGraphics, gif, 16, 16, Process
+processing: processing, TWiki, TWikiDocGraphics, gif, 16, 16, Processing
+processing-32: processing-32, TWiki, TWikiDocGraphics, gif, 32, 32, Processing
+processing-32-bg: processing-32-bg, TWiki, TWikiDocGraphics, gif, 32, 32, Processing, transparent
+processing-bar: processing-bar, TWiki, TWikiDocGraphics, gif, 92, 16, Processing bar
+processing-bar-wide: processing-bar-wide, TWiki, TWikiDocGraphics, gif, 124, 12, Processing bar, wide
+processing-bg: processing-bg, TWiki, TWikiDocGraphics, gif, 16, 16, Processing, transparent
+profile: profile, TWiki, TWikiDocGraphics, gif, 16, 16, Profile
+project: project, TWiki, TWikiDocGraphics, gif, 16, 16, Project
+project-plan: project-plan, TWiki, TWikiDocGraphics, gif, 16, 16, Project plan
+proportional: proportional, TWiki, TWikiDocGraphics, gif, 16, 16, Proportional
+ps: ps, TWiki, TWikiDocGraphics, gif, 16, 16, Postscript
+psd: psd, TWiki, TWikiDocGraphics, gif, 16, 16, Photoshop document
+puzzle: puzzle, TWiki, TWikiDocGraphics, gif, 16, 16, Puzzle
+py: py, TWiki, TWikiDocGraphics, gif, 16, 16, Python source code file
+qrcode: qrcode, TWiki, TWikiDocGraphics, gif, 16, 16, QR Code
+question: question, TWiki, TWikiDocGraphics, gif, 16, 16, Question
+quiet: quiet, TWiki, TWikiDocGraphics, gif, 16, 16, Quiet
+ra: ram, TWiki, TWikiDocGraphics, gif, 16, 16, RealAudio
+radioactive: radioactive, TWiki, TWikiDocGraphics, gif, 16, 16, Radioactive
+recentchanges: recentchanges, TWiki, TWikiDocGraphics, gif, 16, 16, Recent changes
+reddit: reddit, TWiki, TWikiDocGraphics, gif, 16, 16, Reddit
+refreshtopic: refreshtopic, TWiki, TWikiDocGraphics, gif, 16, 16, Refresh topic
+reg: reg, TWiki, TWikiDocGraphics, gif, 16, 16, Registry file
+reload: reload, TWiki, TWikiDocGraphics, gif, 16, 16, Reload
+reload-green: reload-green, TWiki, TWikiDocGraphics, gif, 16, 16, Reload green
+remove: remove, TWiki, TWikiDocGraphics, gif, 12, 12, Remove button, small
+requirements: requirements, TWiki, TWikiDocGraphics, gif, 16, 16, Requirements
+rfc: rfc, TWiki, TWikiDocGraphics, gif, 16, 16, Request for comments
+right: right, TWiki, TWikiDocGraphics, gif, 16, 16, Right
+roadmap: roadmap, TWiki, TWikiDocGraphics, gif, 16, 16, Roadmap
+rss: rss, TWiki, TWikiDocGraphics, gif, 16, 16, RSS feed, gray box
+rss-feed: rss-feed, TWiki, TWikiDocGraphics, gif, 36, 14, RSS feed
+rss-small: rss-small, TWiki, TWikiDocGraphics, gif, 16, 16, RSS feed, text
+save: save, TWiki, TWikiDocGraphics, gif, 16, 16, Save
+search-small: search-small, TWiki, TWikiDocGraphics, gif, 13, 13, Small search button
+searchpackage: searchpackage, TWiki, TWikiDocGraphics, gif, 16, 16, Search package
+searchtag: searchtag, TWiki, TWikiDocGraphics, gif, 16, 16, Search tag
+searchtopic: searchtopic, TWiki, TWikiDocGraphics, gif, 16, 16, Search topic
+sh: sh, TWiki, TWikiDocGraphics, gif, 16, 16, Unix shell script
+shipping: shipping, TWiki, TWikiDocGraphics, gif, 16, 16, Shipping
+sitemap: sitemap, TWiki, TWikiDocGraphics, gif, 16, 16, Site map
+sitetree: sitetree, TWiki, TWikiDocGraphics, gif, 16, 16, Site tree
+skin: skin, TWiki, TWikiDocGraphics, gif, 16, 16, Skin
+skype: skype, TWiki, TWikiDocGraphics, gif, 16, 16, Skype
+smartphone: smartphone, TWiki, TWikiDocGraphics, gif, 16, 16, Smartphone
+sniff: sniff, TWiki, TWikiDocGraphics, gif, 16, 16, sniff
+socket: socket, TWiki, TWikiDocGraphics, gif, 16, 16, Socket
+sort: sort, TWiki, TWikiDocGraphics, gif, 16, 16, Sort
+star-full: star-full, TWiki, TWikiDocGraphics, gif, 16, 16, Star (full)
+star-half: star-half, TWiki, TWikiDocGraphics, gif, 16, 16, Star (half)
+star-none: star-none, TWiki, TWikiDocGraphics, gif, 16, 16, Star (none)
+stargold: stargold, TWiki, TWikiDocGraphics, gif, 16, 16, Gold star, favorites
+starred: starred, TWiki, TWikiDocGraphics, gif, 16, 16, Red star, highlight
+statistics: statistics, TWiki, TWikiDocGraphics, gif, 16, 16, Statistics
+stop: stop, TWiki, TWikiDocGraphics, gif, 16, 16, Stop
+strategy: strategy, TWiki, TWikiDocGraphics, gif, 16, 16, Strategy
+stumbleupon: stumbleupon, TWiki, TWikiDocGraphics, gif, 16, 16, Stumbleupon
+support: support, TWiki, TWikiDocGraphics, gif, 16, 16, Support
+svg: svg, TWiki, TWikiDocGraphics, gif, 16, 16, SVG (Scalable Vector Graphics)
+swf: swf, TWiki, TWikiDocGraphics, gif, 16, 16, SWF (Shockwave Flash)
+switch: switch, TWiki, TWikiDocGraphics, gif, 16, 16, Switch
+table: table, TWiki, TWikiDocGraphics, gif, 16, 16, Table
+tablesortdiamond: tablesortdiamond, TWiki, TWikiDocGraphics, gif, 11, 13, Sort table
+tablesortdown: tablesortdown, TWiki, TWikiDocGraphics, gif, 11, 13, Sort table descending
+tablesortup: tablesortup, TWiki, TWikiDocGraphics, gif, 11, 13, Sort table ascending
+tag: tag, TWiki, TWikiDocGraphics, gif, 16, 16, Tag
+tag-blue: tag-blue, TWiki, TWikiDocGraphics, gif, 16, 16, Blue tag
+tag-brown: tag-brown, TWiki, TWikiDocGraphics, gif, 16, 16, Brown tag
+tag-green: tag-green, TWiki, TWikiDocGraphics, gif, 16, 16, Green tag
+tag-magenta: tag-magenta, TWiki, TWikiDocGraphics, gif, 16, 16, Magenta tag
+tag-orange: tag-orange, TWiki, TWikiDocGraphics, gif, 16, 16, Orange tag
+tag-purple: tag-purple, TWiki, TWikiDocGraphics, gif, 16, 16, Purple tag
+tag-red: tag-red, TWiki, TWikiDocGraphics, gif, 16, 16, Red tag
+tag-yellow: tag-yellow, TWiki, TWikiDocGraphics, gif, 16, 16, Yellow tag
+target: target, TWiki, TWikiDocGraphics, gif, 16, 16, Target
+target-blue: target-blue, TWiki, TWikiDocGraphics, gif, 16, 16, Target - blue
+target-gray: target-gray, TWiki, TWikiDocGraphics, gif, 16, 16, Target - gray
+target-green: target-green, TWiki, TWikiDocGraphics, gif, 16, 16, Target - green
+target-orange: target-orange, TWiki, TWikiDocGraphics, gif, 16, 16, Target - orange
+target-red: target-red, TWiki, TWikiDocGraphics, gif, 16, 16, Target - red
+tasks: tasks, TWiki, TWikiDocGraphics, gif, 16, 16, Tasks
+technorati: technorati, TWiki, TWikiDocGraphics, gif, 16, 16, Technorati
+thumbs-down: thumbs-down, TWiki, TWikiDocGraphics, gif, 16, 16, Thumbs-down
+thumbs-up: thumbs-up, TWiki, TWikiDocGraphics, gif, 16, 16, Thumbs-up
+tip: tip, TWiki, TWikiDocGraphics, gif, 16, 16, Tip, idea
+todo: todo, TWiki, TWikiDocGraphics, gif, 37, 16, TODO
+toggleclose: toggleclose, TWiki, TWikiDocGraphics, gif, 16, 16, Close toggle, Twisty close toggle
+toggleclose-mini: toggleclose-mini, TWiki, TWikiDocGraphics, gif, 7, 9, Close toggle, Twisty close toggle
+toggleclose-small: toggleclose-small, TWiki, TWikiDocGraphics, gif, 16, 16, Close toggle, Twisty close toggle
+toggleopen: toggleopen, TWiki, TWikiDocGraphics, gif, 16, 16, Open toggle, Twisty open toggle
+toggleopen-mini: toggleopen-mini, TWiki, TWikiDocGraphics, gif, 7, 9, Open toggle, Twisty open toggle
+toggleopen-small: toggleopen-small, TWiki, TWikiDocGraphics, gif, 16, 16, Open toggle, Twisty open toggle
+toggleopenleft: toggleopenleft, TWiki, TWikiDocGraphics, gif, 16, 16, Open toggle, Twisty open toggle
+toggleopenleft-small: toggleopenleft-small, TWiki, TWikiDocGraphics, gif, 16, 16, Open toggle, Twisty open toggle
+toolbox: toolbox, TWiki, TWikiDocGraphics, gif, 16, 16, Toolbox
+tooth: tooth, TWiki, TWikiDocGraphics, gif, 16, 16, Tooth
+topicbacklinks: topicbacklinks, TWiki, TWikiDocGraphics, gif, 16, 16, Topic back-links
+topicdiffs: topicdiffs, TWiki, TWikiDocGraphics, gif, 16, 16, Topic difference
+topmenu: topmenu, TWiki, TWikiDocGraphics, gif, 16, 16, Topmenu
+traffic-light: traffic-light, TWiki, TWikiDocGraphics, gif, 16, 16, Traffic light
+trash: trash, TWiki, TWikiDocGraphics, gif, 16, 16, Trash
+twiki: twiki, TWiki, TWikiDocGraphics, gif, 16, 16, TWiki logo
+twiki-alert: twiki-alert, TWiki, TWikiDocGraphics, gif, 16, 16, TWiki Alert
+twiki-gray: twiki-gray, TWiki, TWikiDocGraphics, gif, 16, 16, TWiki logo, gray scale
+twiki-help: twiki-help, TWiki, TWikiDocGraphics, gif, 16, 16, TWiki help
+twiki-irc: twiki-irc, TWiki, TWikiDocGraphics, gif, 16, 16, TWiki Internet Relay Chat
+twitter: twitter, TWiki, TWikiDocGraphics, gif, 16, 16, Twitter
+unchecked: unchecked, TWiki, TWikiDocGraphics, gif, 16, 16, Unchecked checkbox
+unchecked-round: unchecked-round, TWiki, TWikiDocGraphics, gif, 16, 16, Unchecked checkbox, round
+unchecked-square: unchecked-square, TWiki, TWikiDocGraphics, gif, 16, 16, Unchecked checkbox, square
+up: up, TWiki, TWikiDocGraphics, gif, 16, 16, Up
+updated: updated, TWiki, TWikiDocGraphics, gif, 55, 16, UPDATED
+useractive: useractive, TWiki, TWikiDocGraphics, gif, 16, 16, Active user
+useradd: useradd, TWiki, TWikiDocGraphics, gif, 16, 16, Add user
+userinactive: userinactive, TWiki, TWikiDocGraphics, gif, 16, 16, Inactive user
+uweb-bo: uweb-bo, TWiki, TWikiDocGraphics, gif, 16, 16, UWEB (Universal Wiki Edit Button), blue, outline
+uweb-bo12: uweb-bo12, TWiki, TWikiDocGraphics, gif, 12, 12, UWEB, blue, outline, small
+uweb-g: uweb-g, TWiki, TWikiDocGraphics, gif, 16, 16, UWEB, green (default)
+uweb-gs: uweb-gs, TWiki, TWikiDocGraphics, gif, 16, 16, UWEB, green, square
+uweb-m12: uweb-m12, TWiki, TWikiDocGraphics, gif, 12, 12, UWEB, black, small
+uweb-o: uweb-o, TWiki, TWikiDocGraphics, gif, 16, 16, UWEB, orange
+uweb-o12: uweb-o12, TWiki, TWikiDocGraphics, gif, 12, 12, UWEB, orange, small
+uweb-o14: uweb-o14, TWiki, TWikiDocGraphics, gif, 14, 14, UWEB, orange, small
+uweb-oo: uweb-oo, TWiki, TWikiDocGraphics, gif, 16, 16, UWEB, orange, outline
+uweb-os: uweb-os, TWiki, TWikiDocGraphics, gif, 16, 16, UWEB, orange, square
+vcard: vcard, TWiki, TWikiDocGraphics, gif, 16, 16, VCard
+vector: vector, TWiki, TWikiDocGraphics, gif, 16, 16, Generic vector
+video: video, TWiki, TWikiDocGraphics, gif, 13, 10, Video
+viewtopic: viewtopic, TWiki, TWikiDocGraphics, gif, 16, 16, View topic
+vision: vision, TWiki, TWikiDocGraphics, gif, 16, 16, Vision
+vsd: vsd, TWiki, TWikiDocGraphics, gif, 16, 16, Visio document
+warning: warning, TWiki, TWikiDocGraphics, gif, 16, 16, Warning, important
+watch: watch, TWiki, TWikiDocGraphics, gif, 16, 16, Watch
+web-bg: web-bg, TWiki, TWikiDocGraphics, gif, 16, 16, Web background
+web-bg-small: web-bg-small, TWiki, TWikiDocGraphics, gif, 13, 13, Web background
+windows: windows, TWiki, TWikiDocGraphics, gif, 16, 16, Windows
+wip: wip, TWiki, TWikiDocGraphics, gif, 16, 16, Work in progress, under construction
+wrench: wrench, TWiki, TWikiDocGraphics, gif, 16, 16, Wrench, tools
+wri: wri, TWiki, TWikiDocGraphics, gif, 16, 16, Windows Write
+xla: xls, TWiki, TWikiDocGraphics, gif, 16, 16, Microsoft Excel Spreadsheet
+xml: xml, TWiki, TWikiDocGraphics, gif, 16, 16, XML
+xml-feed: xml-feed, TWiki, TWikiDocGraphics, gif, 36, 14, XML feed
+xml-small: xml-small, TWiki, TWikiDocGraphics, gif, 16, 16, XML feed
+xsl: xsl, TWiki, TWikiDocGraphics, gif, 16, 16, XSL (XML style sheet)
+ying-yang: ying-yang, TWiki, TWikiDocGraphics, gif, 16, 16, Ying Yang
+youtube: youtube, TWiki, TWikiDocGraphics, gif, 16, 16, YouTube
+aif => abs
+aiff => abs
+arj => arc
+au => abs
+b64 => arc
+bhx => arc
+cab => arc
+cmd => bat
+cpp => c
+eml => email
+hqx => arc
+html => htm
+ico => bmp
+ini => inf
+java => class
+jpe => jfif
+jpeg => jfif
+jpg => jfif
+jse => js
+lzh => arc
+m1v => avi
+mdb => mda
+mde => mda
+mid => abs
+mim => arc
+mov => avi
+mp2 => abs
+mp3 => abs
+mp4 => avi
+mpa => avi
+mpe => avi
+mpeg => avi
+mpega => abs
+mpegv => avi
+mpg => avi
+mpv => avi
+mpv2 => avi
+pcx => gif
+pl => perl
+pm => perl
+ppa => pot
+pps => pot
+ppt => pot
+pwz => pot
+ram => ra
+rm => ra
+rmi => abs
+rtf => doc
+shtml => htm
+tar => arc
+taz => arc
+text => inf
+tgz => arc
+tif => png
+tiff => png
+ttf => pfm
+txt => inf
+tz => arc
+vbs => avi
+wav => abs
+xbm => bmp
+xlb => xla
+xlc => xla
+xld => xla
+xlk => xla
+xll => xla
+xlm => xla
+xls => xla
+xlt => xla
+xlw => xla
+z => arc
+zip => arc
+# EOF

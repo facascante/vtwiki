@@ -1,0 +1,170 @@
+%META:TOPICINFO{author="TWikiContributor" date="1307246499" format="1.1" version="$Rev$"}%
+---+!! <nop>%TOPIC%
+<!--
+   Contributions to this TWiki plugin are appreciated. Please update the plugin page at
+   http://twiki.org/cgi-bin/view/Plugins/SkillsPlugin or provide feedback at
+   http://twiki.org/cgi-bin/view/Plugins/SkillsPluginDev.
+   If you are a TWiki contributor please update the plugin in the SVN repository.
+-->
+<sticky><div style="float:right; background-color:#EBEEF0; margin:0 0 20px 20px; padding: 0 10px 0 10px;">
+%TOC{title="Page contents"}%
+</div></sticky>
+%SHORTDESCRIPTION%
+
+---++ Introduction
+
+This plugin allows users to specify what skills they have and their level of proficiency. The user can then display their skills on their user profile page, and view other users skills by browsing through specific categories/skills.
+
+---++ Example
+
+Below is a screenshot of the users skill being displayed on their profile page. Click for the full image.
+
+<a href="%ATTACHURLPATH%/skills_screenshot_full.png"><img src="%ATTACHURLPATH%/skills_screenshot_thumb.png" alt="skills_screenshot_thumb.png" /></a>
+
+To get the skills displayed on the users profile page, as in this example, see SkillsDisplayOnHomePage.
+
+---++ User Interface
+
+---+++ Users
+
+The user interface for general users can be found at the following places:
+
+   * SkillsBrowseAll
+   * SkillsEditMySkills
+   * SkillsSearch
+
+---+++ Managing Categories and Skills
+
+To create, modify or delete categories/skills, follow the instructions at SkillsAdminIntroduction.
+
+---++ Syntax Rules
+
+The plugin handles a =%<nop>SKILLS{}%= variable that performs different actions. The =action=""= is a required parameter.
+
+   * =%<nop>SKILLS{ action="userskills" }%= - Displays the skills for the specific user.
+   | *Parameter* | *Comment* | *Default* | 
+   | =user="%WIKINAME%"= | The user who's skills to display (you do not need to specify the %MAINWEB% web). | Current user |
+   | =twisty="open" | Can be: =open= - starts expanded; =closed= - starts collapsed; =off= - disabled. | ="closed"= |
+
+   * =%<nop>SKILLS{ action="edit" }%= - Displays a form allowing the current logged in user to edit their skills.
+
+   * =%<nop>SKILLS{ action="browse" }%= - Lists the specific skills/categories, and the users who have them.
+   | *Parameter* | *Comment* | *Default* | 
+   | =category="Cat1, Cat2"= | If category is defined, will list all the users who have skills in that category. | All categories |
+   | =skill="Skill1, Skill2"= | If category and skill are defined, lists all the users who have that skill. | All skills |
+   | =twisty="open"= | Can be: =open= - starts expanded; =top= - open at the top level, closed at the second level; =closed= - starts collapsed; =off= - disabled. | ="closed"= |
+
+   * =%<nop>SKILLS{ action="search" }%= - Provides a form allowing you to search users skills.
+
+---
+
+   * =%<nop>SKILLS{ action="showcategories" }%= - shows all existing categories.
+   | *Parameter* | *Comment* | *Default* |
+   | =format= | Format of a category. Tokens: =$category=, =$n=. | ="$category"= |
+   | =separator= | Separator between tags, =$n= can be used for newlines. | =", "= |
+
+   * =%<nop>SKILLS{ action="showskills" }%= - shows all existing skills.
+   | *Parameter* | *Comment* | *Default* | 
+   | =category= | Specific category | all |
+   | =format= | Format of a skill. Tokens: =$skill=, =$category=, =$n=. | ="$skill"= |
+   | =separator= | Separator between skills, =$n= can be used for newlines. | =", "= |
+   | =categoryseparator= | Separator between categories, =$n= can be used for newlines. | ="$n"= |
+   | =prefix= | Prefix before each category. Tokens =$category=, =$n=. | none |
+   | =suffix= | Suffix after each category. Tokens =$category=, =$n=. | none |
+
+---++ Plugin Settings
+
+Plugin settings are stored as preferences variables in %LOCALSITEPREFS%.
+
+   * By default, anyone can add new skills/categories. To limit this to a list of people/groups, add the following to %LOCALSITEPREFS%:
+      * Set ALLOWADDSKILLS = Main.UnknownUser
+
+   * By default, the styles using in the plugins forms are found in the =style.css=, attached to this topic. To define your own style sheet, add the following to %LOCALSITEPREFS%:
+      * Set STYLEURL = %PUBURL%/%SYSTEMWEB%/SkillsPlugin/style.css
+
+   * Debug plugin
+      * To see the output in =data/debug.txt=, add the following to =LocalSite.cfg=:
+         * =$TWiki::cfg{Plugins}{SkillsPlugin}{Debug} = 1=
+
+   * Short description of plugin
+      * Set SHORTDESCRIPTION = Allows users to list their skills, which can then be searched
+
+---++ Plugin Installation Instructions
+
+__Note:__ You do not need to install anything on the browser to use this plugin. The following instructions are for the administrator who installs the plugin on the TWiki server. 
+
+   * Download the ZIP file from the plugin web (see below)
+   * Unzip ==%TOPIC%.zip== in your twiki installation directory. Content:
+   | *File:* | *Description:* |
+   | ==data/TWiki/SkillsAdminIntroduction.txt== | UI Topic |
+   | ==data/TWiki/SkillsAdvancedSearch.txt== | UI Topic |
+   | ==data/TWiki/SkillsPlugin.txt== | Plugin Topic |
+   | ==data/TWiki/SkillsBrowseAll.txt== | UI Topic |
+   | ==data/TWiki/SkillsCreateNewCategory.txt== | UI Topic |
+   | ==data/TWiki/SkillsCreateNewSkill.txt== | UI Topic |
+   | ==data/TWiki/SkillsDeleteCategory.txt== | UI Topic |
+   | ==data/TWiki/SkillsDeleteSkill.txt== | UI Topic |
+   | ==data/TWiki/SkillsDisplayOnHomePage.txt== | Supplemental Documentation |
+   | ==data/TWiki/SkillsEditMySkills.txt== | UI Topic |
+   | ==data/TWiki/SkillsMoveSkill.txt== | UI Topic |
+   | ==data/TWiki/SkillsRenameCategory.txt== | UI Topic |
+   | ==data/TWiki/SkillsRenameSkill.txt== | UI Topic |
+   | ==data/TWiki/SkillsSearch.txt== | UI Topic |
+   | ==lib/TWiki/Plugins/SkillsPlugin.pm== | Plugin Module |
+   | ==lib/TWiki/Plugins/SkillsPlugin/Category.pm== | Plugin Module |
+   | ==lib/TWiki/Plugins/SkillsPlugin/Skill.pm== | Plugin Module |
+   | ==lib/TWiki/Plugins/SkillsPlugin/SkillsStore.pm== | Plugin Module |
+   | ==lib/TWiki/Plugins/SkillsPlugin/UserSkill.pm== | Plugin Module |
+   | ==lib/TWiki/Plugins/SkillsPlugin/UserSkills.pm== | Plugin Module |
+   | ==pub/TWiki/SkillsPlugin/skills_screenshot_full.png== | Screenshot |
+   | ==pub/TWiki/SkillsPlugin/skills_screenshot_search.png== | Screenshot |
+   | ==pub/TWiki/SkillsPlugin/skills_screenshot_thumb.png== | Screenshot |
+   | ==pub/TWiki/SkillsPlugin/style.css== | Default Style Sheet |
+   | ==pub/TWiki/SkillsPlugin/main.js== | JS File |
+   | ==templates/skillsedit.tmpl== | Add/Edit form template |
+   | ==templates/skillssearchform.tmpl== | Search form template |
+   | ==templates/skills.tmpl== | Base template |
+   | ==templates/skillsuserview.tmpl== | User Skills template |
+   | ==templates/skillsuserviewrepeated.tmpl== | User Skills Repeated template |
+   | ==templates/skillssearchresults.tmpl== | Search results template |
+   | ==templates/skillssearchresultsrepeated.tmpl== | Search Results Repeated template |
+   | ==templates/skillsbrowseview.tmpl== | Browse Skills template |
+   | ==templates/skillsbrowseviewrepeated.tmpl== | Browse Skills Repeated template |
+   | ==templates/oopsgeneric.skills.tmpl== | Skills Comment template |
+
+
+   * Configure the plugin:
+      * Run the [[%SCRIPTURL%/configure%SCRIPTSUFFIX%][configure]] script to enable the plugin
+      * Change the plugin settings as needed
+   * Test if the installation was successful:
+      * [[SkillsEditMySkills][You should see a form allowing you to add/edit your skills]]
+   * If needed, customise the styles by creating a new style sheet and adding the setting above to %LOCALSITEPREFS%
+   * Start adding some categories and skills
+      * SkillsCreateNewCategory
+      * SkillsCreateNewSkill
+
+---++ Plugin Info
+
+|  Plugin Author: | TWiki:Main.AndrewRJones |
+|  Copyright: | &copy; 2007 - 2009, TWiki:Main.AndrewRJones <br /> &copy; 2008-2011 TWiki:TWiki.TWikiContributor |
+|  License: | GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]]) |
+|  Plugin Version: | 21404 (2011-06-04) |
+|  Change History: | <!-- versions below in reverse order -->&nbsp; |
+|  2011-06-04: | TWikibug:Item6725: Change code from "use vars" to "our"; small doc fixes -- TWiki:Main.PeterThoeny |
+|  2011-01-17: | TWikibug:Item6530: Doc improvements; changing TWIKIWEB to SYSTEMWEB -- TWiki:Main.PeterThoeny |
+|  05 Feb 2009 | Complete rewrite; more scaleable; better performace; can use special characters in skill names; can use templates to change output |
+|  14032 | Bugs:Item4209 - Initial release |
+|  TWiki Dependency: | $TWiki::Plugins::VERSION 1.1 |
+|  CPAN Dependencies: | none |
+|  Other Dependencies: | none |
+|  Perl Version: | Tested on 5.8.4 |
+|  Plugin Home: | http://TWiki.org/cgi-bin/view/Plugins/%TOPIC% |
+|  Feedback: | http://TWiki.org/cgi-bin/view/Plugins/%TOPIC%Dev |
+|  Appraisal: | http://TWiki.org/cgi-bin/view/Plugins/%TOPIC%Appraisal |
+
+__Related Topics:__ %SEARCH{ "^Skills" scope="topic" type="regex" excludetopic="%TOPIC%" nonoise="on" format="[[$topic]]" separator=", " }%, %SYSTEMWEB%.TWikiPlugins, %SYSTEMWEB%.AdminDocumentationCategory, %SYSTEMWEB%.TWikiPreferences
+
+%META:FILEATTACHMENT{name="style.css" attr="h" comment="" date="1171245554" path="style.css" size="2317" user="TWikiContributor" version=""}%
+%META:FILEATTACHMENT{name="skills_screenshot_thumb.png" attr="h" comment="" date="1171248289" path="skills_screenshot_thumb.png" size="48997" user="TWikiContributor" version="2"}%
+%META:FILEATTACHMENT{name="skills_screenshot_full.png" attr="h" comment="" date="1171248281" path="skills_screenshot_full.png" size="131655" user="TWikiContributor" version="1"}%
+%META:FILEATTACHMENT{name="skills_screenshot_search.png" attr="h" comment="" date="1172430565" path="skills_screenshot_search.png" size="9636" user="TWikiContributor" version="1"}%

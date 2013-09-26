@@ -1,0 +1,31 @@
+head	1.1;
+access	;
+symbols;
+locks; strict;
+comment	@@;
+
+1.1
+date	2013.09.17.07.04.44;	author BaseUserMapping_333;	state Exp;
+branches;	
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Saved by install script@
+text
+@%META:TOPICINFO{author="TWikiContributor" date="1272872656" format="1.1" version="$Rev$"}%
+%META:TOPICPARENT{name="OpenIdRpContrib"}%
+---+ !OpenID User Console
+
+logged in via !OpenID: %IF{ "context logged_in_openid" then="yes" else="no" }% 
+
+%OPENIDCONSOLE%
+
+__Related Topics:__ OpenIdRpContrib, OpenIdRpContribFAQ, OpenIDAdminConsole
+@
+

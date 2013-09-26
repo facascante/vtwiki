@@ -1,0 +1,134 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2013.02.16.23.22.25;	author TWikiContributor;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2008.01.22.03.21.35;	author TWikiContributor;	state Exp;
+branches;
+next	;
+
+
+desc
+@buildrelease
+@
+
+
+1.2
+log
+@buildrelease
+@
+text
+@---+ Package ==
+*extends* <tt>CGI::Session::Driver::DBI </tt>
+
+
+%TOC%
+=head1 NAME
+
+CGI::Session::Driver::mysql - CGI::Session driver for MySQL database
+
+=head1 SYNOPSIS
+
+    $s = CGI::Session->new( 'driver:mysql', $sid);
+    $s = CGI::Session->new( 'driver:mysql', $sid, { DataSource  => 'dbi:mysql:test',
+                                                   User        => 'sherzodr',
+                                                   Password    => 'hello' });
+    $s = CGI::Session->new( 'driver:mysql', $sid, { Handle => $dbh } );
+
+=head1 DESCRIPTION
+
+B<mysql> stores session records in a MySQL table. For details see L<CGI::Session::Driver::DBI|CGI::Session::Driver::DBI>, its parent class.
+
+It's especially important for the MySQL driver that the session ID column be
+defined as a primary key, or at least "unique", like this:
+
+ CREATE TABLE sessions (
+     id CHAR(32) NOT NULL PRIMARY KEY,
+     a_session TEXT NOT NULL
+  );
+
+To use different column names, change the 'create table' statement, and then simply do this:
+
+    $s = CGI::Session->new('driver:mysql', undef,
+    {
+        TableName=>'session',
+        IdColName=>'my_id',
+        DataColName=>'my_data',
+        DataSource=>'dbi:mysql:project',
+    });
+
+or
+
+    $s = CGI::Session->new('driver:mysql', undef,
+    {
+        TableName=>'session',
+        IdColName=>'my_id',
+        DataColName=>'my_data',
+        Handle=>$dbh,
+    });
+
+=head2 DRIVER ARGUMENTS
+
+B<mysql> driver supports all the arguments documented in L<CGI::Session::Driver::DBI|CGI::Session::Driver::DBI>. In addition, I<DataSource> argument can optionally leave leading "dbi:mysql:" string out:
+
+    $s = CGI::Session->new( 'driver:mysql', $sid, {DataSource=>'shopping_cart'});
+    # is the same as:
+    $s = CGI::Session->new( 'driver:mysql', $sid, {DataSource=>'dbi:mysql:shopping_cart'});
+
+=head2 BACKWARDS COMPATIBILITY
+
+As of V 4.30, the global variable $CGI::Session::MySQL::TABLE_NAME cannot be used to set the session
+table's name.
+
+This is due to changes in CGI::Session::Driver's new() method, which now allows the table's name to be
+changed (as well as allowing both the 'id' column name and the 'a_session' column name to be changed).
+
+See the documentation for CGI::Session::Driver::DBI for details.
+
+In particular, the new syntax for C<new()> applies to all database drivers, whereas the old - and bad -
+global variable method only applied to MySQL.
+
+Alternately, call $session -> table_name('new_name') just after creating the session object if you wish to
+change the session table's name.
+
+=head1 LICENSING
+
+For support and licensing see L<CGI::Session|CGI::Session>.
+
+@
+
+
+1.1
+log
+@buildrelease
+@
+text
+@d12 2
+a13 2
+    $s = new CGI::Session( "driver:mysql", $sid);
+    $s = new CGI::Session( "driver:mysql", $sid, { DataSource  => 'dbi:mysql:test',
+d16 1
+a16 1
+    $s = new CGI::Session( "driver:mysql", $sid, { Handle => $dbh } );
+d30 20
+d54 1
+a54 1
+    $s = new CGI::Session( "driver:mysql", $sid, {DataSource=>'shopping_cart'});
+d56 1
+a56 1
+    $s = new CGI::Session( "driver:mysql", $sid, {DataSource=>'dbi:mysql:shopping_cart'});
+d60 10
+a69 1
+For backwards compatibility, you can also set the table like this before calling C<new()>. However, it is not recommended because it can cause conflicts in a persistent environment. 
+d71 2
+a72 1
+    $CGI::Session::MySQL::TABLE_NAME = 'my_sessions';
+@

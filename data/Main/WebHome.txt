@@ -1,0 +1,29 @@
+%META:TOPICINFO{author="TWikiContributor" date="1314892362" format="1.1" version="28"}%
+%INCLUDE{%SYSTEMWEB%.WebChangesRightBox}%
+---+!! Welcome to the TWiki Enterprise Collaboration Platform
+
+Congratulations, you have finished installing TWiki! *Replace this text with a description of your new TWiki site and links to content.*
+
+To learn more about TWiki, visit the [[%SYSTEMWEB%.WebHome][TWiki web]]. Please ensure that the read/write permissions for each web on your site match your access control policies (see [[%SYSTEMWEB%.SitePermissions]] and [[%SYSTEMWEB%.TWikiPreferences]]). This site is running TWiki version *%WIKIVERSION%*, Plugin API version *%PLUGINVERSION{}%*
+
+---++ Site Map
+
+%INCLUDE{%SYSTEMWEB%.SiteMap}%
+
+---++ <nop>%WEB% Web Utilities
+
+   * [[%SYSTEMWEB%.WelcomeGuest][WelcomeGuest]] - for first time visitors
+   * [[%SYSTEMWEB%.TWikiRegistration][Registration]] - become a <nop>%WIKITOOLNAME% user
+   * [[UserList]] - list of users of this <nop>%WIKITOOLNAME% site
+   * [[TWikiGroups]] - list of groups used for access control
+   * [[WebSearch]] - simple search
+   * [[WebSearchAdvanced]] - %MAKETEXT{"advanced search"}%
+   * [[WebTopicList]] - all topics in alphabetical order
+   * [[WebChanges]] - recent topic changes in this web
+   * [[WebNotify]] - subscribe to an e-mail alert sent when topics change
+   * [[WebRss]], [[WebAtom]] - RSS and ATOM news feeds of topic changes
+   * [[WebStatistics]] - listing popular topics and top contributors
+   * [[WebTopMenu]] - top menu definition
+   * [[WebPreferences]] - preferences of this web
+   * [[%LOCALSITEPREFS%]] - site level preferences
+   * [[%SYSTEMWEB%.SiteMap][SiteMap]] - site map listing all <nop>%WIKITOOLNAME% webs
